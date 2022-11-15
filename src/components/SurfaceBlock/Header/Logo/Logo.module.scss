@@ -1,0 +1,33 @@
+@import "src/general";
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: $black-1;
+  gap: 10px;
+
+  &:active {
+    .icon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+}

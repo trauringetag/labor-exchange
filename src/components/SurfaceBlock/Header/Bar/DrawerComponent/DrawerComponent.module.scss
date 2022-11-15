@@ -1,0 +1,23 @@
+@import "src/general";
+
+.button {
+  min-width: 36px !important;
+  padding: 8px !important;
+  color: $black-1 !important;
+}
+
+.link, .icon {
+  text-decoration: none;
+  color: $black-1;
+  width: 100%;
+  outline: none;
+}
+
+.active {
+  background-color: $blue-3;
+  color: $white-1;
+
+  .icon {
+    color: $white-1;
+  }
+}

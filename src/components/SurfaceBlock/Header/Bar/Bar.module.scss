@@ -1,0 +1,11 @@
+@import "src/general";
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  div {
+    height: 100vh !important;
+  }
+}

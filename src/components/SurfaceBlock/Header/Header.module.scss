@@ -1,0 +1,17 @@
+@import "src/general";
+
+.wrapper {
+  @include shadow;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+}
