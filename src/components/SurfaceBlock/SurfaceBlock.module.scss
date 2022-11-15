@@ -1,6 +1,13 @@
 @import "src/general";
 
 .surface {
-  height: 500px;
   background-color: $white-2;
+}
+
+.wrapper {
+  @include container;
+  padding: 70px 25px 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

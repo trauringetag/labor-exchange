@@ -1,0 +1,77 @@
+@import "src/general";
+
+.slider {
+  & > button {
+    &::before, &::after {
+      color: $blue-3 !important;
+    }
+  }
+}
+
+.item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  gap: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 700;
+  color: $blue-1;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 300;
+  color: $black-1;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+}
+
+.button {
+  background-color: $blue-3 !important;
+  display: inline !important;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 1380px) {
+  .slider {
+    & > button {
+      &::before, &::after {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}

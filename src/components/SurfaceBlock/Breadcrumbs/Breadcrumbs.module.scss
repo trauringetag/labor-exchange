@@ -1,0 +1,28 @@
+@import "src/general";
+
+.breadcrumbs {
+  color: $turquoise-1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .wrapper {
+    display: flex;
+    gap: 10px;
+
+    .past {
+      color: $turquoise-1;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        color: $turquoise-2;
+      }
+    }
+  }
+  .current {
+    color: $turquoise-3;
+  }
+}
