@@ -13,7 +13,17 @@ const settings = {
     pauseOnHover: true
 };
 
-const SurfaceSlider = () => (
-    <Slider className={classes.slider} {...settings}></Slider>
-);
+const SurfaceSlider = props => {
+    const displaySliderElements = props.sliderElements.map( item =>
+        <SliderElement key={ item.id }
+                       title={ item.title }
+                       text={ item.text }
+                       link={ item.link }
+                       imageUrl={ item.imageUrl }
+        />
+    );
+    return (
+        <Slider className={classes.slider} {...settings}>{ displaySliderElements }</Slider>
+    );
+};
 export default SurfaceSlider;

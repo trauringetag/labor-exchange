@@ -14,7 +14,7 @@ const SliderElement = props => (
                 </NavLink>
             </nav>
         </div>
-        <img className={classes.image} src={ props.image } alt={'Фотография'} />
+        <img className={classes.image} src={ props.imageUrl } alt={'Фотография'} />
     </article>
 );
 export default SliderElement;
