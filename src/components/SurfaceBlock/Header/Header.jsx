@@ -1,7 +1,7 @@
 import classes from './Header.module.scss';
-import Logo from "./Logo/Logo";
+import Logo from "../../CommonComponents/Logo";
 import Bar from "./Bar/Bar";
-import {Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Header = () => (
     <div className={classes.wrapper}>
