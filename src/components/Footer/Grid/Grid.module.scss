@@ -1,0 +1,18 @@
+@import "src/general";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2.75fr 10fr;
+  grid-gap: 50px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & > a {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../../../general";
+
+.connection {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  & > article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.phone {
+  color: $blue-1;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mail {
+  color: $turquoise-5;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.address {
+  color: $blue-1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description {
+  color: $turquoise-5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+
+  & > svg {
+    width: 36px;
+    height: 36px;
+    transition: .125s ease;
+  }
+  &:active {
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .phone {
+    font-size: 24px;
+  }
+
+  .address {
+    font-size: 16px !important;
+  }
+}

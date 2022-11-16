@@ -1,0 +1,32 @@
+@import "src/general";
+
+.tabs {
+  color: $blue-1 !important;
+
+  & > div:nth-child(3) {
+     & > span {
+      background-color: $blue-1 !important;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  a {
+    color: $black-1;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $blue-3;
+    }
+  }
+}
