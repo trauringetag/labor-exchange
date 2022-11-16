@@ -6,8 +6,8 @@
 
 .wrapper {
   @include container;
-  padding: 70px 25px 30px 25px;
+  padding: 75px 25px 30px 25px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }

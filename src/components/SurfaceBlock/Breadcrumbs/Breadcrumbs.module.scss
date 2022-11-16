@@ -26,3 +26,9 @@
     color: $turquoise-3;
   }
 }
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

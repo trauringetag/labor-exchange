@@ -8,7 +8,7 @@ const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true
 };
@@ -19,7 +19,7 @@ const SurfaceSlider = props => {
                        title={ item.title }
                        text={ item.text }
                        link={ item.link }
-                       imageUrl={ item.imageUrl }
+                       image={ item.image }
         />
     );
     return (

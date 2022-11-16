@@ -4,7 +4,12 @@ import { NavLink } from "react-router-dom";
 
 const routes = [
     { path: '/', breadcrumb: 'Главная' },
-    { path: '/news', breadcrumb: 'Новости' }
+    { path: '/news', breadcrumb: 'Новости' },
+    { path: '/about', breadcrumb: 'О нас' },
+    { path: '/legislation', breadcrumb: 'Законодательство' },
+    { path: '/legislation/appeal-procedure', breadcrumb: 'Порядок обжалования' },
+    { path: '/interview', breadcrumb: 'Опрос' },
+    { path: '/temporary-employment', breadcrumb: 'Временное трудоустройство' }
 ];
 
 const MapBreadcrumbs = (props) => {
