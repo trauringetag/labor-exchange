@@ -1,8 +1,10 @@
 import classes from './Footer.module.scss';
 
 const Footer = () => (
-    <footer className={classes.wrapper}>
-        Footer
-    </footer>
+    <div className={classes.wrapper}>
+        <footer className={classes.footer}>
+            Footer
+        </footer>
+    </div>
 );
 export default Footer;

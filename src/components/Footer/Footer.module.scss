@@ -1,6 +1,10 @@
 @import "src/general";
 
 .wrapper {
-  @include container;
   flex-shrink: 0;
+  background-color: $white-2;
+}
+
+.footer {
+  @include container;
 }
