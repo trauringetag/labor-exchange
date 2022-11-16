@@ -1,10 +1,9 @@
 import classes from './SliderElement.module.scss';
-import { NavLink } from "react-router-dom";
-import Button from "@mui/material/Button";
 import Handshake from '../../../../assets/SurfaceSliderIcons/handshake.svg';
 import Judge from '../../../../assets/SurfaceSliderIcons/judge.svg';
 import City from '../../../../assets/SurfaceSliderIcons/city.svg';
 import Checkbox from '../../../../assets/SurfaceSliderIcons/checkbox.svg';
+import LinkButton from "../../../CommonComponents/LinkButton";
 
 const IconSelection = icon => {
     switch (icon) {
@@ -27,9 +26,7 @@ const SliderElement = props => (
             <h2 className={classes.title}>{ props.title }</h2>
             <p className={classes.text}>{ props.text }</p>
             <nav>
-                <NavLink to={ props.link } className={classes.link}>
-                    <Button className={classes.button} variant="contained">Перейти</Button>
-                </NavLink>
+                <LinkButton to={ props.link } inscription={'Перейти'} />
             </nav>
         </div>
         <img className={classes.image} src={ IconSelection(props.image) } alt={'Фотография'} />

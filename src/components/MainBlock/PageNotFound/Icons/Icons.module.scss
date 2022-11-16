@@ -1,0 +1,36 @@
+.atom {
+  max-width: 400px;
+  max-height: 400px;
+  pointer-events: none;
+}
+
+.hole {
+  max-width: 400px;
+  max-height: 400px;
+  pointer-events: none;
+  display: none;
+}
+
+@keyframes atom-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .atom {
+    animation: atom-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .atom {
+    display: none;
+  }
+  .hole {
+    display: block;
+  }
+}

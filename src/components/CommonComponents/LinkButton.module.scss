@@ -1,0 +1,11 @@
+@import "src/general";
+
+.link {
+  text-decoration: none;
+  outline: none;
+}
+
+.button {
+  background-color: $blue-3 !important;
+  display: inline !important;
+}
