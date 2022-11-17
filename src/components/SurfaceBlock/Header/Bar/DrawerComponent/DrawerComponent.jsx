@@ -27,9 +27,10 @@ const DrawerComponent = () => {
     const list = (anchor) => (
         <Box
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-            role="presentation"
+            role={'presentation'}
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
+            component={'section'}
         >
             <List>
                 <ListItem key={'Главная'} disablePadding>
@@ -68,6 +69,7 @@ const DrawerComponent = () => {
             </Button>
             <SwipeableDrawer
                 anchor={'left'}
+                className={classes.wrapper}
                 open={state['left']}
                 onClose={toggleDrawer('left', false)}
                 onOpen={toggleDrawer('left', true)}
