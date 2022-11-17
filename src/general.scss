@@ -2,6 +2,7 @@ $white-1: #FFFFFF;
 $white-2: #F0F4F8;
 
 $black-1: #000000;
+$black-2: #333333;
 
 $turquoise-1: #8FB1C7;
 $turquoise-2: #6B8595;
@@ -12,6 +13,8 @@ $turquoise-5: #6E9BB8;
 $blue-1: #0000DE;
 $blue-2: #92D3F5;
 $blue-3: #355DFB;
+
+$green-1: #6FCF97;
 
 @mixin container {
   max-width: 1330px;

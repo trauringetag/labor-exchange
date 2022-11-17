@@ -1,0 +1,80 @@
+@import "src/general";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 300;
+  color: $black-2;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  .item:hover {
+    min-height: 250px;
+  }
+}
+
+.item {
+  @include shadow;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 55px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 200px;
+  outline: none;
+  max-height: 250px;
+
+  &:active {
+    .icon, svg {
+      transform: scale(1.1);
+    }
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin: 0 auto;
+    pointer-events: none;
+  }
+  h3 {
+    font-size: 14px;
+    color: $black-1;
+    font-weight: 500;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+}
+
+.link {
+  gap: 10px;
+  background-color: $green-1;
+  min-height: 250px;
+
+  & > svg {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 18px;
+    color: $white-1;
+  }
+}
+
+@media (max-width: 1130px) {
+  .item {
+    min-height: 250px;
+  }
+}
