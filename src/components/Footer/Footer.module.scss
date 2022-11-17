@@ -13,22 +13,6 @@
   gap: 60px;
 }
 
-.information {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: $turquoise-5;
-
-  .title {
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .text {
-    font-size: 14px;
-    font-weight: 400;
-  }
-}
-
 .copyright {
   color: $turquoise-5;
   font-size: 12px;
