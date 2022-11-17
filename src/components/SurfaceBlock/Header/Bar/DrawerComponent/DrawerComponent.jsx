@@ -6,7 +6,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import HomeIcon from "@mui/icons-material/Home";
@@ -43,9 +43,6 @@ const DrawerComponent = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-            </List>
-            <Divider />
-            <List>
                 <ListItem key={'Новости'} disablePadding>
                     <NavLink to={'/news'} className={setActive}>
                         <ListItemButton>
@@ -57,6 +54,7 @@ const DrawerComponent = () => {
                     </NavLink>
                 </ListItem>
             </List>
+            <Divider />
         </Box>
     );
 

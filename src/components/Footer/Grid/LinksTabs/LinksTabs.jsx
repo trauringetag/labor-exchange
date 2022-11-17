@@ -64,7 +64,7 @@ const LinksTabs = () => {
             </Box>
             <TabPanel value={value} index={0}>
                 <NavLink to={'/'}>Главная</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
+                <NavLink to={'/news'}>Новости</NavLink>
                 <NavLink to={'/'}>Заглушка</NavLink>
                 <NavLink to={'/'}>Заглушка</NavLink>
                 <NavLink to={'/'}>Заглушка</NavLink>
