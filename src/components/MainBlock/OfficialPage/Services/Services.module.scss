@@ -37,7 +37,7 @@
   max-height: 250px;
 
   &:active {
-    .icon, svg {
+    .icon {
       transform: scale(1.1);
     }
   }
@@ -62,10 +62,9 @@
   background-color: $green-1;
   min-height: 250px;
 
-  & > svg {
+  .icon {
     width: 64px;
     height: 64px;
-    margin: 0 auto;
   }
   h3 {
     font-size: 18px;

@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+
+  & > svg {
+    width: 36px;
+    height: 36px;
+    transition: .125s ease;
+  }
+  &:active {
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}

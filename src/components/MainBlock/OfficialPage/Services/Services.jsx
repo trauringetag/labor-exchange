@@ -1,10 +1,10 @@
 import classes from './Services.module.scss';
 import { NavLink } from "react-router-dom";
-import Search from "../../../../assets/ServicesIcons/search.svg";
-import Worker from "../../../../assets/ServicesIcons/worker.svg";
-import Chart from "../../../../assets/ServicesIcons/chart.svg";
-import Purse from "../../../../assets/ServicesIcons/purse.svg";
-import { More } from "../../../CommonComponents/SVG/More";
+import Search from "./Icons/search.svg";
+import Worker from "./Icons/worker.svg";
+import Chart from "./Icons/chart.svg";
+import Purse from "./Icons/purse.svg";
+import More from "./Icons/more.svg";
 import { Slide } from "react-awesome-reveal";
 
 const Services = () => (
@@ -30,7 +30,7 @@ const Services = () => (
                     <h3>По осуществлению выплат безработным гражданам</h3>
                 </NavLink>
                 <NavLink to={'/about'} className={`${classes.item} ${classes.link}`}>
-                    <More />
+                    <img className={classes.icon} src={More} alt={'Иконка'} />
                     <h3>Узнать подробнее...</h3>
                 </NavLink>
             </div>

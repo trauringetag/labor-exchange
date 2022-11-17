@@ -1,5 +1,5 @@
 import classes from './Grid.module.scss';
-import Logo from "../../CommonComponents/Logo";
+import Logo from "../../CommonComponents/Logo/Logo";
 import Search from "./Search/Search";
 import Connection from "./Connection/Connection";
 import LinksTabs from "./LinksTabs/LinksTabs";

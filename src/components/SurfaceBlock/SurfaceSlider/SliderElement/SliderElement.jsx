@@ -1,8 +1,8 @@
 import classes from './SliderElement.module.scss';
-import Handshake from '../../../../assets/SurfaceSliderIcons/handshake.svg';
-import Judge from '../../../../assets/SurfaceSliderIcons/judge.svg';
-import City from '../../../../assets/SurfaceSliderIcons/city.svg';
-import Checkbox from '../../../../assets/SurfaceSliderIcons/checkbox.svg';
+import Handshake from './Icons/handshake.svg';
+import Judge from './Icons/judge.svg';
+import City from './Icons/city.svg';
+import Checkbox from './Icons/checkbox.svg';
 import LinkButton from "../../../CommonComponents/LinkButton";
 
 const IconSelection = icon => {

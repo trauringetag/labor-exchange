@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import Logo from "../../CommonComponents/Logo";
+import Logo from "../../CommonComponents/Logo/Logo";
 import Bar from "./Bar/Bar";
 import { Fade } from "react-awesome-reveal";
 
