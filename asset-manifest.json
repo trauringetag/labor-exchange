@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/labor-exchange/static/css/main.5752dfbd.css",
-    "main.js": "/labor-exchange/static/js/main.63c27f2f.js",
+    "main.js": "/labor-exchange/static/js/main.c432fb48.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/labor-exchange/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/labor-exchange/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -51,11 +51,11 @@
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
     "main.5752dfbd.css.map": "/labor-exchange/static/css/main.5752dfbd.css.map",
-    "main.63c27f2f.js.map": "/labor-exchange/static/js/main.63c27f2f.js.map",
+    "main.c432fb48.js.map": "/labor-exchange/static/js/main.c432fb48.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5752dfbd.css",
-    "static/js/main.63c27f2f.js"
+    "static/js/main.c432fb48.js"
   ]
 }
