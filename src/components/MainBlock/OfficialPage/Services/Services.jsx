@@ -11,7 +11,7 @@ const Services = () => (
     <section className={classes.services}>
         <h2 className={classes.title}>Учреждение предоставляет следующие госудаственные услуги</h2>
         <hr/>
-        <Slide>
+        <Slide triggerOnce>
             <div className={classes.container}>
                 <NavLink to={'/about'} className={classes.item}>
                     <img className={classes.icon} src={Search} alt={'Иконка'} />

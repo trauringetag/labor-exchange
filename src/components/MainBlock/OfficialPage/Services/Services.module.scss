@@ -7,9 +7,7 @@
 }
 
 .title {
-  font-size: 36px;
-  font-weight: 300;
-  color: $black-2;
+  @include title(36px);
 }
 
 .container {
