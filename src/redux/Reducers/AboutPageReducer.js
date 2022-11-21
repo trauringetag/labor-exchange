@@ -110,7 +110,14 @@ const initialState = {
             leftColumn: 'Обед',
             rightColumn: '12:15 – 13:00'
         }
-    ]
+    ],
+    information: {
+        legalAddress: '457352, г. Карталы, Челябинская область, ул. Свердлова 12',
+        supervisor: 'Николай Александрович Плохих',
+        accountingPhone: '(35133) 2-24-7',
+        employmentDepartmentPhone: '(35133) 2-24-95',
+        hotlinePhone: '2-23-51'
+    }
 };
 
 export const AboutPageReducer = (state = initialState, action) => state;

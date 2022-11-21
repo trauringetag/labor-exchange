@@ -1,0 +1,14 @@
+@import "src/general";
+
+.title {
+  @include title(28px);
+  text-align: center;
+}
+
+.maps {
+  @include mini-container;
+  width: 100%;
+  border: unset;
+  outline: none;
+  border-radius: 10px;
+}
