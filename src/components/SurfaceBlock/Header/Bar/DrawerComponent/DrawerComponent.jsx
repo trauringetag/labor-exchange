@@ -58,6 +58,8 @@ const DrawerComponent = () => {
         </Box>
     );
 
+    const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
+
     return (
         <React.Fragment key={'left'}>
             <Button className={classes.button}
@@ -68,6 +70,8 @@ const DrawerComponent = () => {
             <SwipeableDrawer
                 anchor={'left'}
                 className={classes.wrapper}
+                disableBackdropTransition={!iOS}
+                disableDiscovery={iOS}
                 open={state['left']}
                 onClose={toggleDrawer('left', false)}
                 onOpen={toggleDrawer('left', true)}
