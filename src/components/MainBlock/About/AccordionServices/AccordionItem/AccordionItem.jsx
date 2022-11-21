@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
 const AccordionItem = props => (
-    <Accordion component={'article'}>
+    <Accordion className={classes.item} component={'article'}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.preview} component={'h3'}>{ props.preview }</Typography>
         </AccordionSummary>

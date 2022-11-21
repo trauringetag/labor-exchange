@@ -1,5 +1,8 @@
 @import "src/general";
 
+.item {
+  @include shadow;
+}
 .preview {
   font-weight: 500 !important;
 }

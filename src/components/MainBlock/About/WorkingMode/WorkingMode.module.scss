@@ -2,6 +2,7 @@
 
 .table {
   @include mini-container;
+  @include shadow;
   border-collapse: collapse;
 
   th {
