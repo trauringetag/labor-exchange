@@ -73,5 +73,13 @@
 @media (max-width: 1130px) {
   .item {
     min-height: 250px;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .link {
+    width: 200px;
   }
 }
