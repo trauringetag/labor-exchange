@@ -1,0 +1,32 @@
+@import "src/general";
+
+.table {
+  @include mini-container;
+  border-collapse: collapse;
+
+  th {
+    background-color: $blue-3;
+    color: $white-1;
+    font-size: 20px;
+  }
+  td {
+    width: 50%;
+    font-size: 16px;
+  }
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  tr {
+    &:hover {
+      background-color: $white-3;
+    }
+    &:nth-child(even) {
+      background-color: $white-5;
+
+      &:hover {
+        background-color: $white-4;
+      }
+    }
+  }
+}

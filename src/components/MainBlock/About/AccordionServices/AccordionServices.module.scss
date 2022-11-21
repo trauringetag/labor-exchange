@@ -1,0 +1,10 @@
+@import "src/general";
+
+.title {
+  @include title(28px);
+  text-align: center;
+}
+
+.accordion {
+  @include mini-container;
+}

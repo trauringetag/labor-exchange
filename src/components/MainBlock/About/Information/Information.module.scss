@@ -1,0 +1,28 @@
+@import "src/general";
+
+.block {
+  @include mini-container;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text {
+  @include mini-container;
+  color: $black-2;
+  font-size: 18px;
+  font-weight: 700;
+
+  span {
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    color: $blue-3;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
