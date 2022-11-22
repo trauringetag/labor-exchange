@@ -6,7 +6,7 @@ import OfficialPage from "./OfficialPage/OfficialPage";
 import About from "./About/About";
 
 const MainBlock = () => (
-    <Fade className={classes.wrapper}>
+    <Fade className={classes.wrapper} triggerOnce>
         <Routes>
             <Route path={'/labor-exchange'} element={<Navigate to={'/'} />} />
             <Route path={'*'} element={<PageNotFound />} />

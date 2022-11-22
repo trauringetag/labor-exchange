@@ -4,7 +4,7 @@ import Grid from "./Grid/Grid";
 import SideInformation from "./SideInformation/SideInformation";
 
 const Footer = () => (
-    <Fade className={classes.wrapper}>
+    <Fade className={classes.wrapper} triggerOnce>
         <footer className={classes.footer}>
             <Grid />
             <SideInformation />

@@ -16,10 +16,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-
-  .item:hover {
-    min-height: 250px;
-  }
 }
 
 .item {
@@ -31,9 +27,11 @@
   flex-direction: column;
   gap: 25px;
   max-width: 200px;
-  outline: none;
   max-height: 250px;
 
+  &:hover {
+    min-height: 250px;
+  }
   &:active {
     .icon {
       transform: scale(1.1);

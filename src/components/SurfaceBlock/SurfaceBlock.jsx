@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const SurfaceBlock = () => (
     <div className={classes.surface}>
         <Header />
-        <Fade>
+        <Fade triggerOnce>
             <section className={classes.wrapper}>
                 <Breadcrumbs separator={'<'} />
                 <SurfaceSliderContainer />

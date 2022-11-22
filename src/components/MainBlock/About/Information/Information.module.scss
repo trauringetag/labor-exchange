@@ -11,15 +11,15 @@
   @include mini-container;
   color: $black-2;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
 
   span {
-    font-weight: 400;
+    font-weight: 300;
   }
   a {
     text-decoration: none;
     color: $blue-3;
-    font-weight: 400;
+    font-weight: 300;
 
     &:hover {
       text-decoration: underline;

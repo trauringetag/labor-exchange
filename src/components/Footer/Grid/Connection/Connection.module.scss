@@ -1,4 +1,4 @@
-@import "../../../../general";
+@import "src/general";
 
 .connection {
   display: flex;
@@ -24,9 +24,6 @@
 }
 
 .mail {
-  color: $turquoise-5;
-  font-size: 16px;
-  font-weight: 400;
   text-decoration: none;
 
   &:hover {
@@ -40,7 +37,8 @@
   font-weight: 400;
 }
 
-.description {
+.description,
+.mail {
   color: $turquoise-5;
   font-size: 16px;
   font-weight: 400;
