@@ -45,3 +45,10 @@ $shadow-color: rgba(34, 60, 80, 0.2);
     }
   }
 }
+
+@mixin underlining {
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid $black-2;
+}

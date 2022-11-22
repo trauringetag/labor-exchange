@@ -9,3 +9,7 @@
 .title {
   @include title(36px);
 }
+
+.underlining {
+  @include underlining;
+}

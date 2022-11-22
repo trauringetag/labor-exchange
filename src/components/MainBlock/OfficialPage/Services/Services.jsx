@@ -10,7 +10,7 @@ import { Slide } from "react-awesome-reveal";
 const Services = () => (
     <section className={classes.services}>
         <h2 className={classes.title}>Учреждение предоставляет следующие госудаственные услуги</h2>
-        <hr/>
+        <hr className={classes.underlining} />
         <Slide triggerOnce>
             <div className={classes.container}>
                 <NavLink to={'/about'} className={classes.item}>
