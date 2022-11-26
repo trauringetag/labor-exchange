@@ -20,4 +20,8 @@
     "slick-carousel": "^1.8.1",
     "use-react-router-breadcrumbs": "^4.0.1"
 
+    "devDependencies": {
+        "gh-pages": "^4.0.0"
+    }
+
 ### Дата начала разработки: 15.11.2022
