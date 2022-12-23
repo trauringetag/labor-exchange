@@ -1,6 +1,13 @@
+@import "src/general";
+
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 50px;
   height: 100%;
+}
+
+.content {
+  @include container;
+  flex: 1 0 auto;
 }
