@@ -5,7 +5,7 @@ import SideInformation from "./SideInformation/SideInformation";
 
 const Footer = () => (
     <Fade className={classes.wrapper} triggerOnce>
-        <footer className={classes.footer}>
+        <footer className={classes.container}>
             <Grid />
             <SideInformation />
             <p className={classes.copyright}>2014 &copy; Официальный сайт Центра занятости населения</p>

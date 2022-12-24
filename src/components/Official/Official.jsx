@@ -1,9 +1,9 @@
-import classes from './OfficialPage.module.scss';
+import classes from './Official.module.scss';
 import Services from "./Services/Services";
 
-const OfficialPage = () => (
+const Official = () => (
     <div className={classes.wrapper}>
         <Services />
     </div>
 );
-export default OfficialPage;
+export default Official;

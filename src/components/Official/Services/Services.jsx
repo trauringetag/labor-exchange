@@ -8,33 +8,33 @@ import More from "../../../assets/services/more.svg";
 import { Slide } from "react-awesome-reveal";
 
 const Services = () => (
-    <section className={classes.services}>
+    <div className={classes.wrapper}>
         <h2 className={classes.title}>Учреждение предоставляет следующие госудаственные услуги</h2>
         <hr className={classes.underlining} />
         <Slide triggerOnce>
-            <div className={classes.container}>
+            <section className={classes.container}>
                 <NavLink to={'/about'} className={classes.item}>
-                    <img className={classes.icon} src={Search} alt={'Иконка'} />
+                    <img className={classes.icon} src={ Search } alt={'Иконка'} />
                     <h3>По содействию гражданам в поиске подходящей работы</h3>
                 </NavLink>
                 <NavLink to={'/about'} className={classes.item}>
-                    <img className={classes.icon} src={Worker} alt={'Иконка'} />
+                    <img className={classes.icon} src={ Worker } alt={'Иконка'} />
                     <h3>Работодателям в подборе необходимых работников</h3>
                 </NavLink>
                 <NavLink to={'/about'} className={classes.item}>
-                    <img className={classes.icon} src={Chart} alt={'Иконка'} />
+                    <img className={classes.icon} src={ Chart } alt={'Иконка'} />
                     <h3>По информированию о положении на рынке труда</h3>
                 </NavLink>
                 <NavLink to={'/about'} className={classes.item}>
-                    <img className={classes.icon} src={Purse} alt={'Иконка'} />
+                    <img className={classes.icon} src={ Purse } alt={'Иконка'} />
                     <h3>По осуществлению выплат безработным гражданам</h3>
                 </NavLink>
                 <NavLink to={'/about'} className={`${classes.item} ${classes.link}`}>
-                    <img className={classes.icon} src={More} alt={'Иконка'} />
+                    <img className={classes.icon} src={ More } alt={'Иконка'} />
                     <h3>Узнать подробнее...</h3>
                 </NavLink>
-            </div>
+            </section>
         </Slide>
-    </section>
+    </div>
 );
 export default Services;
