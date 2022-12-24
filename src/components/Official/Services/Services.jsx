@@ -29,7 +29,7 @@ const Services = () => (
                     <img className={classes.icon} src={ Purse } alt={'Иконка'} />
                     <h3>По осуществлению выплат безработным гражданам</h3>
                 </NavLink>
-                <NavLink to={'/about'} className={`${classes.item} ${classes.link}`}>
+                <NavLink to={'/about'} className={`${classes.item} ${classes.last}`}>
                     <img className={classes.icon} src={ More } alt={'Иконка'} />
                     <h3>Узнать подробнее...</h3>
                 </NavLink>
