@@ -19,7 +19,7 @@ function TabPanel (props) {
         >
             {value === index && (
                 <Box component={'section'} sx={{ p: 3 }}>
-                    <nav className={classes.navigation}>{children}</nav>
+                    <nav className={classes.navigation}>{ children }</nav>
                 </Box>
             )}
         </div>
