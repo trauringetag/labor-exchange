@@ -1,6 +1,6 @@
-import classes from './Icons.module.scss';
+import classes from './Cover.module.scss';
 
-export const Icons = () => (
+export const Cover = () => (
     <>
         <svg className={classes.atom} id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">

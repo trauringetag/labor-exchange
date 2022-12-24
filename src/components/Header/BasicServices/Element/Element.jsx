@@ -1,8 +1,8 @@
-import classes from './SliderElement.module.scss';
-import Handshake from './Icons/handshake.svg';
-import Judge from './Icons/judge.svg';
-import City from './Icons/city.svg';
-import Checkbox from './Icons/checkbox.svg';
+import classes from './Element.module.scss';
+import Handshake from '../../../../assets/slider/handshake.svg';
+import Judge from '../../../../assets/slider/judge.svg';
+import City from '../../../../assets/slider/city.svg';
+import Checkbox from '../../../../assets/slider/checkbox.svg';
 import LinkButton from "../../../CommonComponents/LinkButton";
 
 const IconSelection = icon => {
@@ -20,7 +20,7 @@ const IconSelection = icon => {
     }
 };
 
-const SliderElement = props => (
+const Element = props => (
     <article className={classes.item} key={ props.id }>
         <div className={classes.content}>
             <h2 className={classes.title}>{ props.title }</h2>
@@ -32,4 +32,4 @@ const SliderElement = props => (
         <img className={classes.image} src={ IconSelection(props.image) } alt={'Фотография'} />
     </article>
 );
-export default SliderElement;
+export default Element;

@@ -1,6 +1,6 @@
-import classes from './SurfaceSlider.module.scss';
+import classes from './BasicServices.module.scss';
 import Slider from "react-slick";
-import SliderElement from "./SliderElement/SliderElement";
+import Element from "./Element/Element";
 
 const settings = {
     dots: true,
@@ -13,17 +13,17 @@ const settings = {
     pauseOnHover: true
 };
 
-const SurfaceSlider = props => {
+const BasicServices = props => {
     const displaySliderElements = props.sliderElements.map( item =>
-        <SliderElement key={ item.id }
-                       title={ item.title }
-                       text={ item.text }
-                       link={ item.link }
-                       image={ item.image }
+        <Element key={ item.id }
+                 title={ item.title }
+                 text={ item.text }
+                 link={ item.link }
+                 image={ item.image }
         />
     );
     return (
         <Slider className={classes.slider} {...settings}>{ displaySliderElements }</Slider>
     );
 };
-export default SurfaceSlider;
+export default BasicServices;

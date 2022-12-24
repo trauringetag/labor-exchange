@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import SurfaceSlider from "./SurfaceSlider";
+import BasicServices from "./BasicServices";
 
 const mapStateToProps = state => ({ sliderElements: state.surfaceBlock.sliderElements });
 
-export const SurfaceSliderContainer = connect(mapStateToProps)(SurfaceSlider);
+export const BasicServicesContainer = connect(mapStateToProps)(BasicServices);
