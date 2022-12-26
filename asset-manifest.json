@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/labor-exchange/static/css/main.2f2bda30.css",
-    "main.js": "/labor-exchange/static/js/main.29b99b81.js",
+    "main.css": "/labor-exchange/static/css/main.e5913911.css",
+    "main.js": "/labor-exchange/static/js/main.ed2d001d.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
     "static/media/office.svg": "/labor-exchange/static/media/office.c9c89aebaae273c9a635f0ab7fbdf6a5.svg",
     "static/media/roboto-all-500-normal.woff": "/labor-exchange/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
@@ -36,7 +36,7 @@
     "static/media/roboto-vietnamese-700-normal.woff2": "/labor-exchange/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
     "static/media/roboto-vietnamese-300-normal.woff2": "/labor-exchange/static/media/roboto-vietnamese-300-normal.32fc45a3d1e8ea11fabc.woff2",
     "static/media/worker.svg": "/labor-exchange/static/media/worker.7d91cd6fae8c5ef9b1e8be5f654373d2.svg",
-    "static/media/logo.svg": "/labor-exchange/static/media/logo.caaa9224d63649e77dda0433711686c7.svg",
+    "static/media/logo.svg": "/labor-exchange/static/media/logo.3425596c6f77a623efcd053ab5190d4b.svg",
     "static/media/chart.svg": "/labor-exchange/static/media/chart.32db05d7f1b55a14deee38bb566bdabc.svg",
     "static/media/purse.svg": "/labor-exchange/static/media/purse.45e2df59494a77801f1b02b1973984b5.svg",
     "static/media/slick.svg": "/labor-exchange/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -50,12 +50,12 @@
     "static/media/slick.woff": "/labor-exchange/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
-    "main.2f2bda30.css.map": "/labor-exchange/static/css/main.2f2bda30.css.map",
-    "main.29b99b81.js.map": "/labor-exchange/static/js/main.29b99b81.js.map",
+    "main.e5913911.css.map": "/labor-exchange/static/css/main.e5913911.css.map",
+    "main.ed2d001d.js.map": "/labor-exchange/static/js/main.ed2d001d.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f2bda30.css",
-    "static/js/main.29b99b81.js"
+    "static/css/main.e5913911.css",
+    "static/js/main.ed2d001d.js"
   ]
 }
