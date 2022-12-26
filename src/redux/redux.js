@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { SurfaceBlockReducer } from "./Reducers/SurfaceBlockReducer";
-import { AboutPageReducer } from "./Reducers/AboutPageReducer";
+import { SliderReducer } from "./Reducers/SliderReducer";
+import { AboutReducer } from "./Reducers/AboutReducer";
 
 export const store = configureStore({
     reducer: {
-        surfaceBlock: SurfaceBlockReducer,
-        aboutPage: AboutPageReducer
+        surfaceBlock: SliderReducer,
+        aboutPage: AboutReducer
     }
 });

@@ -5,21 +5,21 @@ const initialState = {
             title: 'Областное казённое учреждение',
             text: 'Областное казённое учреждение Центр занятости населения города Карталы предоставляет государственные услуги в сфере поиска подходящей работы для граждан.',
             link: '/about',
-            image: 'city'
+            image: 'office'
         },
         {
             id: 2,
             title: 'Опрос для граждан и работодателей',
             text: 'Центр занятости населения города Карталы проводит опрос граждан и работодателей по удовлетворенности полнотой, доступностью и качеством получаемых государственных услуг.',
             link: '/interview',
-            image: 'checkbox'
+            image: 'interview'
         },
         {
             id: 3,
             title: 'Временное трудоустройство',
             text: 'Временное трудоустройство безработных граждан, испытывающих трудности в поиске работы. Служба занятости организует временные работы для трудоустройства безработных граждан.',
             link: '/temporary-employment',
-            image: 'handshake'
+            image: 'steps'
         },
         {
             id: 4,
@@ -30,4 +30,4 @@ const initialState = {
         }
     ]
 };
-export const SurfaceBlockReducer = (state = initialState, action) => state;
+export const SliderReducer = (state = initialState, action) => state;

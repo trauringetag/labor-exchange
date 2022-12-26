@@ -120,4 +120,4 @@ const initialState = {
     }
 };
 
-export const AboutPageReducer = (state = initialState, action) => state;
+export const AboutReducer = (state = initialState, action) => state;

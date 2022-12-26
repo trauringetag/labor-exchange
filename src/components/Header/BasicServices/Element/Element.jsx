@@ -1,20 +1,20 @@
 import classes from './Element.module.scss';
-import Handshake from '../../../../assets/slider/handshake.svg';
+import Steps from '../../../../assets/slider/steps.svg';
 import Judge from '../../../../assets/slider/judge.svg';
-import City from '../../../../assets/slider/city.svg';
-import Checkbox from '../../../../assets/slider/checkbox.svg';
+import Office from '../../../../assets/slider/office.svg';
+import Interview from '../../../../assets/slider/interview.svg';
 import LinkButton from "../../../CommonComponents/LinkButton";
 
 const IconSelection = icon => {
     switch (icon) {
-        case 'handshake':
-            return Handshake;
-        case 'checkbox':
-            return Checkbox;
+        case 'steps':
+            return Steps;
+        case 'interview':
+            return Interview;
         case 'judge':
             return Judge;
-        case 'city':
-            return City;
+        case 'office':
+            return Office;
         default:
             return 'https://placehold.co/400';
     }
