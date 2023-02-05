@@ -1,6 +1,6 @@
-import classes from './Cover.module.scss';
+import classes from './NotFoundCover.module.scss';
 
-export const Cover = () => (
+export const NotFoundCover = () => (
     <>
         <svg className={classes.atom} id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">

@@ -1,10 +1,10 @@
 import classes from './Services.module.scss';
 import { NavLink } from "react-router-dom";
-import Search from "../../../assets/services/search.svg";
-import Worker from "../../../assets/services/worker.svg";
-import Chart from "../../../assets/services/chart.svg";
-import Purse from "../../../assets/services/purse.svg";
-import More from "../../../assets/services/more.svg";
+import Search from "../../assets/services/search.svg";
+import Worker from "../../assets/services/worker.svg";
+import Chart from "../../assets/services/chart.svg";
+import Purse from "../../assets/services/purse.svg";
+import More from "../../assets/services/more.svg";
 import { Slide } from "react-awesome-reveal";
 
 const Services = () => (
