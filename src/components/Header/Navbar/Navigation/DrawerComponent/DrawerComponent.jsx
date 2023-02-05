@@ -13,6 +13,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import DescriptionIcon from '@mui/icons-material/Description';
+import ModeIcon from '@mui/icons-material/Mode';
 
 const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
 
@@ -50,6 +51,19 @@ const DrawerComponent = () => {
                                 <DescriptionIcon className={classes.icon} />
                             </ListItemIcon>
                             <ListItemText primary={'О нас'} />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
+            </List>
+            <Divider />
+            <List>
+                <ListItem key={'Опросники'} disablePadding>
+                    <NavLink to={'/interview'} className={setActive}>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ModeIcon className={classes.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={'Опросники'} />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>

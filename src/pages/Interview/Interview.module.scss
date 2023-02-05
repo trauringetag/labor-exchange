@@ -1,0 +1,40 @@
+@import "src/general";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.title {
+  @include title(36px);
+}
+
+.underlining {
+  @include underlining;
+}
+
+.text {
+  color: $black-2;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.link {
+  color: $blue-3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
