@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = {
     services: [
         {
@@ -120,4 +122,12 @@ const initialState = {
     }
 };
 
-export const AboutReducer = (state = initialState, action) => state;
+export const AboutSlice = createSlice(
+    {
+        name: 'about',
+        initialState,
+        reducers: {}
+    }
+);
+export default AboutSlice.reducer;
+export const {} = AboutSlice.actions;

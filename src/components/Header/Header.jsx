@@ -1,8 +1,8 @@
 import classes from './Header.module.scss';
 import Navbar from "./Navbar/Navbar";
 import Breadcrumbs from "./Breadcrumbs/Breadcrumbs";
-import { BasicServicesContainer } from "./BasicServices/BasicServicesContainer";
 import { Fade } from "react-awesome-reveal";
+import BasicServices from "./BasicServices/BasicServices";
 
 const Header = () => (
     <header className={classes.wrapper}>
@@ -10,7 +10,7 @@ const Header = () => (
         <Fade triggerOnce>
             <section className={classes.container}>
                 <Breadcrumbs separator={'<'} />
-                <BasicServicesContainer />
+                <BasicServices />
             </section>
         </Fade>
     </header>

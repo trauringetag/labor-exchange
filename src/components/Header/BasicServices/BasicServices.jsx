@@ -1,6 +1,7 @@
 import classes from './BasicServices.module.scss';
 import Slider from "react-slick";
 import Element from "./Element/Element";
+import { useSelector } from 'react-redux';
 
 const settings = {
     dots: true,
@@ -13,8 +14,10 @@ const settings = {
     pauseOnHover: true
 };
 
-const BasicServices = props => {
-    const displaySliderElements = props.sliderElements.map( item =>
+const BasicServices = () => {
+    const sliderElements = useSelector(state => state.surfaceBlock.sliderElements);
+
+    const displaySliderElements = sliderElements.map( item =>
         <Element key={ item.id }
                  title={ item.title }
                  text={ item.text }
@@ -22,6 +25,7 @@ const BasicServices = props => {
                  image={ item.image }
         />
     );
+
     return (
         <Slider className={classes.slider} {...settings}>{ displaySliderElements }</Slider>
     );

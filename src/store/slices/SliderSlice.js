@@ -1,3 +1,5 @@
+import { createSlice } from '@reduxjs/toolkit';
+
 const initialState = {
     sliderElements: [
         {
@@ -30,4 +32,11 @@ const initialState = {
         }
     ]
 };
-export const SliderReducer = (state = initialState, action) => state;
+
+export const SliderSlice = createSlice({
+    name: 'slider',
+    initialState,
+    reducers: {}
+});
+export default SliderSlice.reducer;
+export const {} = SliderSlice.actions;
