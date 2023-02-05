@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import PageNotFound from "./components/PageNotFound/PageNotFound";
-import Official from "./components/Official/Official";
-import About from "./components/About/About";
-import Layout from "./components/Layout";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import Official from "./pages/Official/Official";
+import About from "./pages/About/About";
+import Layout from "./pages/Layout";
 
 const App = () => (
     <Routes>

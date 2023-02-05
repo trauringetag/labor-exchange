@@ -1,6 +1,6 @@
 import classes from './PageNotFound.module.scss';
 import { Cover } from "./Cover/Cover";
-import LinkButton from "../CommonComponents/LinkButton";
+import LinkButton from "../../components/CommonComponents/LinkButton";
 import { Fade } from "react-awesome-reveal";
 
 const PageNotFound = () => (
