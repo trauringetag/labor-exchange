@@ -10,6 +10,13 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .title {
@@ -22,13 +29,17 @@
 
 .text {
   color: $black-2;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .link {
@@ -37,4 +48,23 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.item {
+  font-weight: 400;
+  font-size: 18px;
+  color: $blue-3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  a {
+    color: $blue-3;
+  }
+}
+
+.button {
+  background-color: $blue-3 !important;
+  display: inline !important;
 }
