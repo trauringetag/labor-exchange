@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/labor-exchange/static/css/main.fb93860b.css",
-    "main.js": "/labor-exchange/static/js/main.baa853c2.js",
+    "main.js": "/labor-exchange/static/js/main.94b434bb.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
+    "static/media/review-changes.doc": "/labor-exchange/static/media/review-changes.b8919b4c88b2423135e3.doc",
     "static/media/for-citizens.doc": "/labor-exchange/static/media/for-citizens.94f3f9a0fb0cc45443f5.doc",
     "static/media/office.svg": "/labor-exchange/static/media/office.c9c89aebaae273c9a635f0ab7fbdf6a5.svg",
     "static/media/for-employers.doc": "/labor-exchange/static/media/for-employers.bb2df8234571e28ef2ff.doc",
@@ -12,7 +13,11 @@
     "static/media/roboto-all-300-normal.woff": "/labor-exchange/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/judge.svg": "/labor-exchange/static/media/judge.a41e302477dd7b59f08882281aaa2bfc.svg",
     "static/media/interview.svg": "/labor-exchange/static/media/interview.bceff688bc1a841232bcda9672ab202d.svg",
+    "static/media/for-pre-pensioners.doc": "/labor-exchange/static/media/for-pre-pensioners.6a2a7768d2f9d196c60c.doc",
+    "static/media/suitable-job.doc": "/labor-exchange/static/media/suitable-job.3267d56eeb1a4e37085e.doc",
+    "static/media/early-retirement.doc": "/labor-exchange/static/media/early-retirement.e5bf4f90abb3eaaab8fd.doc",
     "static/media/steps.svg": "/labor-exchange/static/media/steps.98fdb84a59f361f9a8bab5a10863d70a.svg",
+    "static/media/for-invalids.docx": "/labor-exchange/static/media/for-invalids.31608292d162c9e3878b.docx",
     "static/media/roboto-latin-500-normal.woff2": "/labor-exchange/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/labor-exchange/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/labor-exchange/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -53,11 +58,11 @@
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
     "main.fb93860b.css.map": "/labor-exchange/static/css/main.fb93860b.css.map",
-    "main.baa853c2.js.map": "/labor-exchange/static/js/main.baa853c2.js.map",
+    "main.94b434bb.js.map": "/labor-exchange/static/js/main.94b434bb.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb93860b.css",
-    "static/js/main.baa853c2.js"
+    "static/js/main.94b434bb.js"
   ]
 }
