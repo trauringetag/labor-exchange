@@ -2,8 +2,8 @@ import classes from './Interview.module.scss';
 import { Link } from 'react-router-dom';
 import Button from "@mui/material/Button";
 import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
-import ForCitizensFile from '../../assets/interview/for-citizens.doc';
-import ForEmployersFile from '../../assets/interview/for-employers.doc';
+import ForCitizensFile from '../../assets/documents/interview/for-citizens.doc';
+import ForEmployersFile from '../../assets/documents/interview/for-employers.doc';
 
 const Interview = () => (
     <PageTitle title={'Опрос для граждан и работадателей'}>
