@@ -2,6 +2,8 @@ import classes from './Interview.module.scss';
 import { Link } from 'react-router-dom';
 import Button from "@mui/material/Button";
 import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import ForCitizensFile from '../../assets/interview/for-citizens.doc';
+import ForEmployersFile from '../../assets/interview/for-employers.doc';
 
 const Interview = () => (
     <PageTitle title={'Опрос для граждан и работадателей'}>
@@ -12,12 +14,12 @@ const Interview = () => (
         </div>
         <ul className={classes.list}>
             <li className={classes.item}>
-                <Link to={'/documents/interview/for-citizens.doc'} target={'_blank'} download>
+                <Link to={ForCitizensFile} target={'_blank'} download={'Для граждан'}>
                     <Button className={classes.button} variant="contained">Для граждан</Button>
                 </Link>
             </li>
             <li className={classes.item}>
-                <Link to={'/documents/interview/for-employers.doc'} target={'_blank'} download>
+                <Link to={ForEmployersFile} target={'_blank'} download={'Для работодателей'}>
                     <Button className={classes.button} variant="contained">Для работодателей</Button>
                 </Link>
             </li>
