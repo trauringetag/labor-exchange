@@ -1,0 +1,23 @@
+@import "src/general";
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 18px;
+
+  h3 {
+    color: $black-1;
+    font-weight: 500;
+  }
+  p, ul {
+    color: $black-2;
+    font-weight: 300;
+  }
+  ul {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

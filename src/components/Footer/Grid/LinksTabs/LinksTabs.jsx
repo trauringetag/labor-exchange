@@ -57,7 +57,8 @@ const LinksTabs = () => {
                     aria-label={'Tabs'}
                 >
                     <Tab label={'Основные'} {...a11yProps(0)} />
-                    <Tab label={'Дополнительные'} {...a11yProps(1)} />
+                    <Tab label={'Документы'} {...a11yProps(1)} />
+                    <Tab label={'Дополнительные'} {...a11yProps(2)} />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
@@ -67,6 +68,9 @@ const LinksTabs = () => {
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <NavLink to={'/interview'}>Опросники</NavLink>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <NavLink to={'/legislation/appeal-procedure'}>Порядок обжалования</NavLink>
             </TabPanel>
         </Box>
     );

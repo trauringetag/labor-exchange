@@ -1,15 +1,18 @@
 @import "src/general";
 
-.wrapper {
+.list {
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
 
-.title {
-  @include title(36px);
-}
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  color: $blue-3;
 
-.underlining {
-  @include underlining;
+  &:hover {
+    text-decoration: underline;
+  }
 }
