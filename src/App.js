@@ -4,6 +4,7 @@ import Official from "./pages/Official/Official";
 import About from "./pages/About/About";
 import Layout from "./pages/Layout";
 import Interview from "./pages/Interview/Interview";
+import Legislation from "./pages/Legislation/Legislation";
 
 const App = () => (
     <Routes>
@@ -13,6 +14,7 @@ const App = () => (
             <Route path={'*'} element={<PageNotFound />} />
             <Route path={'about'} element={<About />} />
             <Route path={'interview'} element={<Interview />} />
+            <Route path={'legislation'} element={<Legislation />} />
         </Route>
     </Routes>
 );

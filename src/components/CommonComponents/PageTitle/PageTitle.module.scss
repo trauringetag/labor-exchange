@@ -1,0 +1,15 @@
+@import "src/general";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  @include title(36px);
+}
+
+.underlining {
+  @include underlining;
+}

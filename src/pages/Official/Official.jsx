@@ -1,9 +1,9 @@
-import classes from './Official.module.scss';
 import Services from "../../components/Services/Services";
+import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
 
 const Official = () => (
-    <div className={classes.wrapper}>
+    <PageTitle title={'Главная страница'}>
         <Services />
-    </div>
+    </PageTitle>
 );
 export default Official;

@@ -1,17 +1,15 @@
-import classes from './About.module.scss';
 import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
 import WorkingMode from "../../components/WorkingMode/WorkingMode";
 import Information from "../../components/Information/Information";
 import AccordionServices from "../../components/AccordionServices/AccordionServices";
+import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
 
 const About = () => (
-    <div className={classes.wrapper}>
-        <h2 className={classes.title}>Областное казённое учреждение Центр занятости населения города Карталы</h2>
-        <hr className={classes.underlining} />
+    <PageTitle title={'ОКУ ЦЗН г. Карталы'}>
         <Information />
         <WorkingMode />
         <AccordionServices />
         <GoogleMaps />
-    </div>
+    </PageTitle>
 );
 export default About;

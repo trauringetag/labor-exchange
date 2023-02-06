@@ -14,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import DescriptionIcon from '@mui/icons-material/Description';
 import ModeIcon from '@mui/icons-material/Mode';
+import GavelIcon from '@mui/icons-material/Gavel';
 
 const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
 
@@ -54,6 +55,16 @@ const DrawerComponent = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
+                <ListItem key={'Законодательство'} disablePadding>
+                    <NavLink to={'/legislation'} className={setActive}>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <GavelIcon className={classes.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={'Законодательство'} />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
             </List>
             <Divider />
             <List>
@@ -68,7 +79,6 @@ const DrawerComponent = () => {
                     </NavLink>
                 </ListItem>
             </List>
-            <Divider />
         </Box>
     );
 

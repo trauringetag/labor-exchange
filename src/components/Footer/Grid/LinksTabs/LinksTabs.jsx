@@ -58,31 +58,15 @@ const LinksTabs = () => {
                 >
                     <Tab label={'Основные'} {...a11yProps(0)} />
                     <Tab label={'Дополнительные'} {...a11yProps(1)} />
-                    <Tab label={'Вкладка №3'} {...a11yProps(2)} />
-                    <Tab label={'Вкладка №4'} {...a11yProps(3)} />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
                 <NavLink to={'/'}>Главная</NavLink>
                 <NavLink to={'/about'}>О нас</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
+                <NavLink to={'/legislation'}>Законодательство</NavLink>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <NavLink to={'/interview'}>Опросники</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
-            </TabPanel>
-            <TabPanel value={value} index={3}>
-                <NavLink to={'/'}>Заглушка</NavLink>
-                <NavLink to={'/'}>Заглушка</NavLink>
             </TabPanel>
         </Box>
     );
