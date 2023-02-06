@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/labor-exchange/static/css/main.fb93860b.css",
-    "main.js": "/labor-exchange/static/js/main.94b434bb.js",
+    "main.js": "/labor-exchange/static/js/main.3769d1f9.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
     "static/media/review-changes.doc": "/labor-exchange/static/media/review-changes.b8919b4c88b2423135e3.doc",
     "static/media/for-citizens.doc": "/labor-exchange/static/media/for-citizens.94f3f9a0fb0cc45443f5.doc",
@@ -58,11 +58,11 @@
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
     "main.fb93860b.css.map": "/labor-exchange/static/css/main.fb93860b.css.map",
-    "main.94b434bb.js.map": "/labor-exchange/static/js/main.94b434bb.js.map",
+    "main.3769d1f9.js.map": "/labor-exchange/static/js/main.3769d1f9.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb93860b.css",
-    "static/js/main.94b434bb.js"
+    "static/js/main.3769d1f9.js"
   ]
 }
