@@ -12,12 +12,12 @@ const Interview = () => (
         </div>
         <ul className={classes.list}>
             <li className={classes.item}>
-                <Link to={'/documents/для граждан.doc'} target={'_blank'} download>
+                <Link to={'/documents/interview/Для граждан.doc'} target={'_blank'} download>
                     <Button className={classes.button} variant="contained">Для граждан</Button>
                 </Link>
             </li>
             <li className={classes.item}>
-                <Link to={'/documents/для работадателей.doc'} target={'_blank'} download>
+                <Link to={'/documents/interview/Для работадателей.doc'} target={'_blank'} download>
                     <Button className={classes.button} variant="contained">Для работадателей</Button>
                 </Link>
             </li>

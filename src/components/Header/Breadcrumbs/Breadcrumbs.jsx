@@ -8,6 +8,7 @@ const routes = [
     { path: 'about', breadcrumb: 'О нас' },
     { path: 'legislation', breadcrumb: 'Законодательство' },
     { path: 'legislation/appeal-procedure', breadcrumb: 'Порядок обжалования' },
+    { path: 'legislation/legislative-changes', breadcrumb: 'Изменение законодательства'},
     { path: 'interview', breadcrumb: 'Опрос' },
     { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' }
 ];

@@ -6,6 +6,7 @@ import Layout from "./pages/Layout";
 import Interview from "./pages/Interview/Interview";
 import Legislation from "./pages/Legislation/Legislation";
 import AppealProcedure from "./pages/AppealProcedure/AppealProcedure";
+import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
 
 const App = () => (
     <Routes>
@@ -17,6 +18,7 @@ const App = () => (
             <Route path={'interview'} element={<Interview />} />
             <Route path={'legislation'} element={<Legislation />} />
             <Route path={'legislation/appeal-procedure'} element={<AppealProcedure />} />
+            <Route path={'legislation/legislative-changes'} element={<LegislativeChanges />} />
         </Route>
     </Routes>
 );

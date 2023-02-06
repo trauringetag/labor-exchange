@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function TabPanel (props) {
     const { children, value, index, ...other } = props;
@@ -62,15 +62,16 @@ const LinksTabs = () => {
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <NavLink to={'/'}>Главная</NavLink>
-                <NavLink to={'/about'}>О нас</NavLink>
-                <NavLink to={'/legislation'}>Законодательство</NavLink>
+                <Link to={'/'}>Главная</Link>
+                <Link to={'/about'}>О нас</Link>
+                <Link to={'/legislation'}>Законодательство</Link>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <NavLink to={'/interview'}>Опросники</NavLink>
+                <Link to={'/interview'}>Опросники</Link>
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <NavLink to={'/legislation/appeal-procedure'}>Порядок обжалования</NavLink>
+                <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
+                <Link to={'/legislation/legislative-changes'}>Изменение законодательства</Link>
             </TabPanel>
         </Box>
     );

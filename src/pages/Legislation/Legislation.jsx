@@ -9,7 +9,7 @@ const Legislation = () => (
                 <Link className={classes.link} to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
             </li>
             <li>
-                <Link className={classes.link} to={'/legislation/review'}>Изменения в законодательстве о занятости населения (с 01.01.2019г.)</Link>
+                <Link className={classes.link} to={'/legislation/legislative-changes'}>Изменения в законодательстве о занятости населения (с 01.01.2019г.)</Link>
             </li>
         </ul>
     </PageTitle>
