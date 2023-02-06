@@ -8,7 +8,7 @@ const Footer = () => (
         <footer className={classes.container}>
             <Grid />
             <SideInformation />
-            <p className={classes.copyright}>2014 &copy; Официальный сайт Центра занятости населения</p>
+            <p className={classes.copyright}>2023 &copy; Официальный сайт Центра занятости населения</p>
         </footer>
     </Fade>
 );
