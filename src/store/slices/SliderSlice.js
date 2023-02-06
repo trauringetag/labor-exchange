@@ -39,4 +39,3 @@ export const SliderSlice = createSlice({
     reducers: {}
 });
 export default SliderSlice.reducer;
-export const {} = SliderSlice.actions;

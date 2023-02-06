@@ -130,4 +130,3 @@ export const AboutSlice = createSlice(
     }
 );
 export default AboutSlice.reducer;
-export const {} = AboutSlice.actions;

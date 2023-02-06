@@ -2,7 +2,7 @@
   "name": "labor-exchange",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kiddkaine.github.io/labor-exchange",
+  "homepage": "https://trauringetag.github.io/labor-exchange",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
