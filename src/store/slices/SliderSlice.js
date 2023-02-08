@@ -13,8 +13,8 @@ const initialState = {
             id: 2,
             title: 'Опрос для граждан и работодателей',
             text: 'Центр занятости населения города Карталы проводит опрос граждан и работодателей по удовлетворенности полнотой, доступностью и качеством получаемых государственных услуг.',
-            link: '/interview',
-            image: 'interview'
+            link: '/questionnaires',
+            image: 'questionnaires'
         },
         {
             id: 3,
@@ -36,6 +36,6 @@ const initialState = {
 export const SliderSlice = createSlice({
     name: 'slider',
     initialState,
-    reducers: {}
+    reducers: { }
 });
 export default SliderSlice.reducer;

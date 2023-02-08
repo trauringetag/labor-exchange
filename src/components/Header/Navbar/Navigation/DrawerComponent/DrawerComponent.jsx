@@ -1,5 +1,4 @@
 import classes from './DrawerComponent.module.scss';
-import * as React from "react";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
@@ -15,11 +14,12 @@ import Divider from "@mui/material/Divider";
 import DescriptionIcon from '@mui/icons-material/Description';
 import ModeIcon from '@mui/icons-material/Mode';
 import GavelIcon from '@mui/icons-material/Gavel';
+import { useState, Fragment } from "react";
 
 const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
 
 const DrawerComponent = () => {
-    const [state, setState] = React.useState({ left: false });
+    const [state, setState] = useState({ left: false });
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) return;
@@ -69,7 +69,7 @@ const DrawerComponent = () => {
             <Divider />
             <List>
                 <ListItem key={'Опросники'} disablePadding>
-                    <NavLink to={'/interview'} className={setActive}>
+                    <NavLink to={'/questionnaires'} className={setActive}>
                         <ListItemButton>
                             <ListItemIcon>
                                 <ModeIcon className={classes.icon} />
@@ -85,7 +85,7 @@ const DrawerComponent = () => {
     const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     return (
-        <React.Fragment key={'left'}>
+        <Fragment key={'left'}>
             <Button className={classes.button}
                     onClick={toggleDrawer('left', true)}
             >
@@ -102,7 +102,7 @@ const DrawerComponent = () => {
             >
                 {list('left')}
             </SwipeableDrawer>
-        </React.Fragment>
+        </Fragment>
     );
 };
 export default DrawerComponent;

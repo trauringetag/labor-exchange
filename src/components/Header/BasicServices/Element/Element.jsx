@@ -9,7 +9,7 @@ const IconSelection = icon => {
     switch (icon) {
         case 'steps':
             return Steps;
-        case 'interview':
+        case 'questionnaires':
             return Interview;
         case 'judge':
             return Judge;

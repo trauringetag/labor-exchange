@@ -15,7 +15,7 @@ const App = () => (
             <Route path={'labor-exchange'} element={<Navigate to={'/'} />} />
             <Route path={'*'} element={<PageNotFound />} />
             <Route path={'about'} element={<About />} />
-            <Route path={'interview'} element={<Interview />} />
+            <Route path={'questionnaires'} element={<Interview />} />
             <Route path={'legislation'} element={<Legislation />} />
             <Route path={'legislation/appeal-procedure'} element={<AppealProcedure />} />
             <Route path={'legislation/legislative-changes'} element={<LegislativeChanges />} />

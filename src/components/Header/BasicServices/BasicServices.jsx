@@ -15,7 +15,7 @@ const settings = {
 };
 
 const BasicServices = () => {
-    const sliderElements = useSelector(state => state.surfaceBlock.sliderElements);
+    const sliderElements = useSelector(state => state.slider.sliderElements);
 
     const displaySliderElements = sliderElements.map( item =>
         <Element key={ item.id }

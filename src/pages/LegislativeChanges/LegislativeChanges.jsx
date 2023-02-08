@@ -1,11 +1,11 @@
 import classes from './LegislativeChanges.module.scss';
 import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
 import { Link } from "react-router-dom";
-import EarlyRetirementFile from '../../assets/documents/legislativeChanges/early-retirement.doc';
-import ForInvalidsFile from '../../assets/documents/legislativeChanges/for-invalids.docx';
-import ForPrePensionersFile from '../../assets/documents/legislativeChanges/for-pre-pensioners.doc';
-import ReviewChangesFile from '../../assets/documents/legislativeChanges/review-changes.doc';
-import SuitableJobFile from '../../assets/documents/legislativeChanges/suitable-job.doc';
+import EarlyRetirementFile from '../../assets/documents/regulations/early-retirement.doc';
+import ForInvalidsFile from '../../assets/documents/regulations/for-invalids.docx';
+import ForPrePensionersFile from '../../assets/documents/regulations/for-pre-pensioners.doc';
+import ReviewChangesFile from '../../assets/documents/regulations/review-changes.doc';
+import SuitableJobFile from '../../assets/documents/regulations/suitable-job.doc';
 
 const LegislativeChanges = () => (
     <PageTitle title={'Изменения в законодательстве о занятости населения (с 01.01.2019г.)'}>

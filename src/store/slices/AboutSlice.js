@@ -126,7 +126,7 @@ export const AboutSlice = createSlice(
     {
         name: 'about',
         initialState,
-        reducers: {}
+        reducers: { }
     }
 );
 export default AboutSlice.reducer;

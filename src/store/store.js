@@ -5,7 +5,7 @@ import SliderSlice from "./slices/SliderSlice";
 
 export const store = configureStore({
     reducer: {
-        surfaceBlock: SliderSlice,
+        slider: SliderSlice,
         aboutPage: AboutSlice
     }
 });

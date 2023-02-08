@@ -1,10 +1,10 @@
 import classes from './LinksTabs.module.scss';
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function TabPanel (props) {
     const { children, value, index, ...other } = props;
@@ -40,7 +40,7 @@ function a11yProps (index) {
 }
 
 const LinksTabs = () => {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
     const handleChange = (event, newValue) => setValue(newValue);
 
     return (
@@ -67,7 +67,7 @@ const LinksTabs = () => {
                 <Link to={'/legislation'}>Законодательство</Link>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <Link to={'/interview'}>Опросники</Link>
+                <Link to={'/questionnaires'}>Опросники</Link>
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
