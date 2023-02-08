@@ -1,9 +1,9 @@
 import classes from './Legislation.module.scss';
-import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import { Link } from 'react-router-dom';
 
 const Legislation = () => (
-    <PageTitle title={'Законодательство'}>
+    <Wrapper title={'Законодательство'}>
         <ul className={classes.list}>
             <li>
                 <Link className={classes.link} to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
@@ -12,6 +12,6 @@ const Legislation = () => (
                 <Link className={classes.link} to={'/legislation/legislative-changes'}>Изменения в законодательстве о занятости населения (с 01.01.2019г.)</Link>
             </li>
         </ul>
-    </PageTitle>
+    </Wrapper>
 );
 export default Legislation;

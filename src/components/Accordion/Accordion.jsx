@@ -1,8 +1,8 @@
-import classes from './AccordionServices.module.scss';
+import classes from './Accordion.module.scss';
 import Element from "./Element/Element";
 import { useSelector } from 'react-redux';
 
-const AccordionServices = () => {
+const Accordion = () => {
     const services = useSelector(state => state.aboutPage.services);
 
     const displayAccordionServices = services.map( item =>
@@ -21,4 +21,4 @@ const AccordionServices = () => {
         </>
     );
 };
-export default AccordionServices;
+export default Accordion;

@@ -1,12 +1,12 @@
 import classes from './Interview.module.scss';
 import { Link } from 'react-router-dom';
 import Button from "@mui/material/Button";
-import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import ForCitizensFile from '../../assets/documents/questionnaires/for-citizens.doc';
 import ForEmployersFile from '../../assets/documents/questionnaires/for-employers.doc';
 
 const Interview = () => (
-    <PageTitle title={'Опрос для граждан и работадателей'}>
+    <Wrapper title={'Опрос для граждан и работадателей'}>
         <div className={classes.information}>
             <p className={`${classes.text} ${classes.bold}`}>Просим граждан и работодателей принять участие в опросе.</p>
             <p className={`${classes.text} ${classes.bold}`}>Центр занятости населения города Карталы проводит опрос граждан и работодателей по удовлетворенности полнотой, доступностью и качеством получаемых государственных услуг.</p>
@@ -29,6 +29,6 @@ const Interview = () => (
             <p className={`${classes.text} ${classes.italic}`}>Время прохождения: ~ 5-10 минут.</p>
             <p className={classes.text}>Большое спасибо за сотрудничество!</p>
         </div>
-    </PageTitle>
+    </Wrapper>
 );
 export default  Interview;

@@ -1,8 +1,8 @@
 import classes from './AppealProcedure.module.scss';
-import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 
 const AppealProcedure = () => (
-    <PageTitle title={'Порядок обжалования'}>
+    <Wrapper title={'Порядок обжалования'}>
         <article className={classes.article}>
             <p>Судебный и административный порядок обжалования нормативных правовых актов, решений Главного управления по труду и занятости населения Челябинской области, действий (бездействия) должностных лиц.</p>
             <h3>Административный порядок обжалования нормативных актов и иных решений Главного управления по труду и занятости населения Челябинской области, действий (бездействия)  должностных лиц.</h3>
@@ -25,6 +25,6 @@ const AppealProcedure = () => (
                 <li>Арбитражный процессуальный кодекс Российской Федерации от 24 июля 2002 г. №95-ФЗ.</li>
             </ul>
         </article>
-    </PageTitle>
+    </Wrapper>
 );
 export default AppealProcedure;

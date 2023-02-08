@@ -1,15 +1,15 @@
 import GoogleMaps from "../../components/GoogleMaps/GoogleMaps";
 import WorkingMode from "../../components/WorkingMode/WorkingMode";
 import Information from "../../components/Information/Information";
-import AccordionServices from "../../components/AccordionServices/AccordionServices";
-import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import Accordion from "../../components/Accordion/Accordion";
+import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 
 const About = () => (
-    <PageTitle title={'ОКУ ЦЗН г. Карталы'}>
+    <Wrapper title={'ОКУ ЦЗН г. Карталы'}>
         <Information />
         <WorkingMode />
-        <AccordionServices />
+        <Accordion />
         <GoogleMaps />
-    </PageTitle>
+    </Wrapper>
 );
 export default About;

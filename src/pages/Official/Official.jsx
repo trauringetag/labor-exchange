@@ -1,9 +1,9 @@
 import Services from "../../components/Services/Services";
-import PageTitle from "../../components/CommonComponents/PageTitle/PageTitle";
+import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 
 const Official = () => (
-    <PageTitle title={'Главная страница'}>
+    <Wrapper title={'Главная страница'}>
         <Services />
-    </PageTitle>
+    </Wrapper>
 );
 export default Official;
