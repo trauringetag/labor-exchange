@@ -6,7 +6,13 @@ import { WhatsApp } from "../../../../CommonComponents/Social/WhatsApp";
 const SocialNetworks = () => (
     <ul className={classes.list}>
         <li>
-            <a className={classes.link} href={'/'}><VK /></a>
+            <a className={classes.link}
+               href={'https://vk.com/public191437741'}
+               target={'_blank'}
+               rel={'noopener noreferrer'}
+            >
+                <VK />
+            </a>
         </li>
         <li>
             <a className={classes.link}
@@ -18,7 +24,13 @@ const SocialNetworks = () => (
             </a>
         </li>
         <li>
-            <a className={classes.link} href={'/'}><WhatsApp /></a>
+            <a className={classes.link}
+               href={'https://wa.me/73513355780'}
+               target={'_blank'}
+               rel={'noopener noreferrer'}
+            >
+                <WhatsApp />
+            </a>
         </li>
     </ul>
 );

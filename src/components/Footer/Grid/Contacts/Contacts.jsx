@@ -1,7 +1,7 @@
-import classes from './Connection.module.scss';
+import classes from './Contacts.module.scss';
 import SocialNetworks from "./SocialNetworks/SocialNetworks";
 
-const Connection = () => (
+const Contacts = () => (
     <section className={classes.connection}>
         <article>
             <a className={classes.phone} href={'tel:8 (951) 235-85-32'}>8 (951) 235-85-32</a>
@@ -14,4 +14,4 @@ const Connection = () => (
         <SocialNetworks />
     </section>
 );
-export default Connection;
+export default Contacts;
