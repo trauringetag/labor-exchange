@@ -1,13 +1,30 @@
 @import "src/general";
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
 .title {
   @include title(32px);
+}
+
+.button {
+  color: $blue-1 !important;
+  display: flex;
+  gap: 10px;
+
+  span {
+    line-height: 20px;
+  }
 }
 
 .underlining {
