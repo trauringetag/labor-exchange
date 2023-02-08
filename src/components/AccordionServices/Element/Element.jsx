@@ -1,11 +1,11 @@
-import classes from './AccordionItem.module.scss';
+import classes from './Element.module.scss';
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
-const AccordionItem = props => (
+const Element = props => (
     <Accordion className={classes.item} component={'article'}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.preview} component={'h3'}>{ props.preview }</Typography>
@@ -19,4 +19,4 @@ const AccordionItem = props => (
         </AccordionDetails>
     </Accordion>
 );
-export default AccordionItem;
+export default Element;

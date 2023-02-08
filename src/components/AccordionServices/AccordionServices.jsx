@@ -1,15 +1,15 @@
 import classes from './AccordionServices.module.scss';
-import AccordionItem from "./AccordionItem/AccordionItem";
+import Element from "./Element/Element";
 import { useSelector } from 'react-redux';
 
 const AccordionServices = () => {
     const services = useSelector(state => state.aboutPage.services);
 
     const displayAccordionServices = services.map( item =>
-        <AccordionItem key={ item.id }
-                       preview={ item.preview }
-                       cabinet={ item.cabinet }
-                       phone={ item.phone }
+        <Element key={ item.id }
+                 preview={ item.preview }
+                 cabinet={ item.cabinet }
+                 phone={ item.phone }
         />
     );
     return (
