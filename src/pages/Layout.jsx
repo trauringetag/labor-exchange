@@ -8,7 +8,7 @@ import { BackToTopButton } from "../components/CommonComponents/BackToTopButton"
 const Layout = () => (
     <div className={classes.wrapper} id={'anchor'}>
         <Header />
-        <Fade className={classes.content} triggerOnce>
+        <Fade className={classes.content} id={'content'} triggerOnce>
             <Outlet />
         </Fade>
         <Footer />

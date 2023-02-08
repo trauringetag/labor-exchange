@@ -29,9 +29,16 @@
 }
 
 .image {
+  min-width: 400px;
+  min-height: 400px;
   max-width: 400px;
   max-height: 400px;
   object-fit: cover;
+
+  @media (max-width: 625px) {
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
 @media (max-width: 900px) {

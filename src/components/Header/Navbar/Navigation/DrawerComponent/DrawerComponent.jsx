@@ -19,7 +19,7 @@ import { useState, Fragment } from "react";
 const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
 
 const DrawerComponent = () => {
-    const [state, setState] = useState({ left: false });
+    const [state, setState] = useState({ right: false });
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) return;
@@ -85,22 +85,22 @@ const DrawerComponent = () => {
     const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     return (
-        <Fragment key={'left'}>
+        <Fragment key={'right'}>
             <Button className={classes.button}
-                    onClick={toggleDrawer('left', true)}
+                    onClick={toggleDrawer('right', true)}
             >
                 <MenuIcon fontSize={'medium'} />
             </Button>
             <SwipeableDrawer
-                anchor={'left'}
+                anchor={'right'}
                 className={classes.wrapper}
                 disableBackdropTransition={!iOS}
                 disableDiscovery={iOS}
-                open={state['left']}
-                onClose={toggleDrawer('left', false)}
-                onOpen={toggleDrawer('left', true)}
+                open={state['right']}
+                onClose={toggleDrawer('right', false)}
+                onOpen={toggleDrawer('right', true)}
             >
-                {list('left')}
+                {list('right')}
             </SwipeableDrawer>
         </Fragment>
     );
