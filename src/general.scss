@@ -53,3 +53,26 @@ $shadow-color: rgba(34, 60, 80, 0.2);
   border: none;
   border-top: 1px solid $black-2;
 }
+
+@mixin content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 18px;
+  line-height: 24px;
+
+  h3 {
+    color: $black-1;
+    font-weight: 500;
+  }
+  p, ul {
+    color: $black-2;
+    font-weight: 300;
+  }
+  ul {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

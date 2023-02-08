@@ -7,6 +7,7 @@ import Questionnaires from "./pages/Questionnaires/Questionnaires";
 import Legislation from "./pages/Legislation/Legislation";
 import AppealProcedure from "./pages/AppealProcedure/AppealProcedure";
 import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
+import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment";
 
 const App = () => (
     <Routes>
@@ -19,6 +20,7 @@ const App = () => (
             <Route path={'legislation'} element={<Legislation />} />
             <Route path={'legislation/appeal-procedure'} element={<AppealProcedure />} />
             <Route path={'legislation/legislative-changes'} element={<LegislativeChanges />} />
+            <Route path={'temporary-employment'} element={<TemporaryEmployment />} />
         </Route>
     </Routes>
 );

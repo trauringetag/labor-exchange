@@ -72,6 +72,7 @@ const LinksTabs = () => {
             <TabPanel value={value} index={2}>
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
                 <Link to={'/legislation/legislative-changes'}>Изменение законодательства</Link>
+                <Link to={'/temporary-employment'}>Временное трудоустройство</Link>
             </TabPanel>
         </Box>
     );
