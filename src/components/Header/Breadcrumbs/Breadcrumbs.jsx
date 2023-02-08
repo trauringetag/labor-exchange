@@ -9,7 +9,7 @@ const routes = [
     { path: 'legislation', breadcrumb: 'Законодательство' },
     { path: 'legislation/appeal-procedure', breadcrumb: 'Порядок обжалования' },
     { path: 'legislation/legislative-changes', breadcrumb: 'Изменение законодательства'},
-    { path: 'questionnaires', breadcrumb: 'Опрос' },
+    { path: 'questionnaires', breadcrumb: 'Анкеты' },
     { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' }
 ];
 

@@ -3,7 +3,7 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Official from "./pages/Official/Official";
 import About from "./pages/About/About";
 import Layout from "./pages/Layout";
-import Interview from "./pages/Interview/Interview";
+import Questionnaires from "./pages/Questionnaires/Questionnaires";
 import Legislation from "./pages/Legislation/Legislation";
 import AppealProcedure from "./pages/AppealProcedure/AppealProcedure";
 import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
@@ -15,7 +15,7 @@ const App = () => (
             <Route path={'labor-exchange'} element={<Navigate to={'/'} />} />
             <Route path={'*'} element={<PageNotFound />} />
             <Route path={'about'} element={<About />} />
-            <Route path={'questionnaires'} element={<Interview />} />
+            <Route path={'questionnaires'} element={<Questionnaires />} />
             <Route path={'legislation'} element={<Legislation />} />
             <Route path={'legislation/appeal-procedure'} element={<AppealProcedure />} />
             <Route path={'legislation/legislative-changes'} element={<LegislativeChanges />} />

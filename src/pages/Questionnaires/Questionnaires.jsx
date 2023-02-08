@@ -1,11 +1,11 @@
-import classes from './Interview.module.scss';
+import classes from './Questionnaires.module.scss';
 import { Link } from 'react-router-dom';
 import Button from "@mui/material/Button";
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import ForCitizensFile from '../../assets/documents/questionnaires/for-citizens.doc';
 import ForEmployersFile from '../../assets/documents/questionnaires/for-employers.doc';
 
-const Interview = () => (
+const Questionnaires = () => (
     <Wrapper title={'Опрос для граждан и работадателей'}>
         <div className={classes.information}>
             <p className={`${classes.text} ${classes.bold}`}>Просим граждан и работодателей принять участие в опросе.</p>
@@ -31,4 +31,4 @@ const Interview = () => (
         </div>
     </Wrapper>
 );
-export default  Interview;
+export default  Questionnaires;
