@@ -9,7 +9,13 @@ const SocialNetworks = () => (
             <a className={classes.link} href={'/'}><VK /></a>
         </li>
         <li>
-            <a className={classes.link} href={'/'}><Telegram /></a>
+            <a className={classes.link}
+               href={'https://t.me/AnatoliyVdovin'}
+               target={'_blank'}
+               rel={'noopener noreferrer'}
+            >
+                <Telegram />
+            </a>
         </li>
         <li>
             <a className={classes.link} href={'/'}><WhatsApp /></a>

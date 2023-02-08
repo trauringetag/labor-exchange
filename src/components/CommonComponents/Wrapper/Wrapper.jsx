@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 const Wrapper = ({ children, title }) => {
     const location = useLocation();
     const navigate = useNavigate();
-
     const goBack = () => navigate(-1);
 
     return (
