@@ -8,6 +8,7 @@ import Legislation from "./pages/Legislation/Legislation";
 import AppealProcedure from "./pages/AppealProcedure/AppealProcedure";
 import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
 import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment";
+import ForEmployers from "./pages/ForEmployers/ForEmployers";
 
 const App = () => (
     <Routes>
@@ -21,6 +22,7 @@ const App = () => (
             <Route path={'legislation/appeal-procedure'} element={<AppealProcedure />} />
             <Route path={'legislation/legislative-changes'} element={<LegislativeChanges />} />
             <Route path={'temporary-employment'} element={<TemporaryEmployment />} />
+            <Route path={'for-employers'} element={<ForEmployers />} />
         </Route>
     </Routes>
 );
