@@ -19,8 +19,8 @@ const Wrapper = ({ children, title }) => {
                             <span>Назад</span>
                         </Button> : <></>
                 }
+                <hr className={classes.underlining} />
             </div>
-            <hr className={classes.underlining} />
             { children }
         </section>
     );
