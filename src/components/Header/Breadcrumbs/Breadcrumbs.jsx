@@ -10,7 +10,8 @@ const routes = [
     { path: 'legislation/appeal-procedure', breadcrumb: 'Порядок обжалования' },
     { path: 'legislation/legislative-changes', breadcrumb: 'Изменение законодательства'},
     { path: 'questionnaires', breadcrumb: 'Анкеты' },
-    { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' }
+    { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' },
+    { path: 'for-employers', breadcrumb: 'Работодателям' }
 ];
 
 const MapBreadcrumbs = (props) => {

@@ -68,6 +68,7 @@ const LinksTabs = () => {
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Link to={'/questionnaires'}>Опросники</Link>
+                <Link to={'/for-employers'}>Работодателям</Link>
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
