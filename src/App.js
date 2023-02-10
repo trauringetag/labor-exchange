@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Official from "./pages/Official/Official";
 import About from "./pages/About/About";
@@ -9,8 +9,7 @@ import AppealProcedure from "./pages/AppealProcedure/AppealProcedure";
 import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
 import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment";
 import ForEmployers from "./pages/ForEmployers/ForEmployers";
-import { useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const App = () => {
     const location = useLocation();
