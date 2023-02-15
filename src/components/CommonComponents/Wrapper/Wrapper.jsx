@@ -11,8 +11,8 @@ const Wrapper = ({ children, title }) => {
     const goBack = () => navigate(-1);
 
     useEffect(() => {
-        const position = ref.current.getBoundingClientRect();
-        window.scrollBy(0, position.top - 100);
+        const rect = ref.current.getBoundingClientRect();
+        window.scrollBy(0, rect.top - 100);
     }, [location]);
 
     return (
