@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/labor-exchange/static/css/main.fc2fc745.css",
-    "main.js": "/labor-exchange/static/js/main.b3c95625.js",
+    "main.css": "/labor-exchange/static/css/main.bfc1b380.css",
+    "main.js": "/labor-exchange/static/js/main.8c82b33f.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
     "static/media/review-changes.doc": "/labor-exchange/static/media/review-changes.b8919b4c88b2423135e3.doc",
     "static/media/foreign-labor-force.docx": "/labor-exchange/static/media/foreign-labor-force.52c6cefe9d2b84496575.docx",
@@ -64,12 +64,12 @@
     "static/media/slick.woff": "/labor-exchange/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
-    "main.fc2fc745.css.map": "/labor-exchange/static/css/main.fc2fc745.css.map",
-    "main.b3c95625.js.map": "/labor-exchange/static/js/main.b3c95625.js.map",
+    "main.bfc1b380.css.map": "/labor-exchange/static/css/main.bfc1b380.css.map",
+    "main.8c82b33f.js.map": "/labor-exchange/static/js/main.8c82b33f.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc2fc745.css",
-    "static/js/main.b3c95625.js"
+    "static/css/main.bfc1b380.css",
+    "static/js/main.8c82b33f.js"
   ]
 }
