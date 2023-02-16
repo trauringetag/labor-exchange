@@ -16,6 +16,7 @@ import ModeIcon from '@mui/icons-material/Mode';
 import GavelIcon from '@mui/icons-material/Gavel';
 import { useState, Fragment } from "react";
 import WorkIcon from '@mui/icons-material/Work';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
 
@@ -63,6 +64,16 @@ const DrawerComponent = () => {
                                 <GavelIcon className={classes.icon} />
                             </ListItemIcon>
                             <ListItemText primary={'Законодательство'} />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
+                <ListItem key={'Новости'} disablePadding>
+                    <NavLink to={'/feed'} className={setActive}>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <NewspaperIcon className={classes.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={'Новости'} />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>

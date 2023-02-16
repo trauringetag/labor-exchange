@@ -8,6 +8,6 @@
 }
 
 .content {
-  @include container;
+  @include large-container;
   flex: 1 0 auto;
 }

@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  li {
+    line-height: 24px;
+  }
 }
 
 .link {

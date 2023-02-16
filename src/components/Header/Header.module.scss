@@ -5,7 +5,7 @@
 }
 
 .container {
-  @include container;
+  @include large-container;
   padding: 75px 25px 30px 25px;
   display: flex;
   flex-direction: column;

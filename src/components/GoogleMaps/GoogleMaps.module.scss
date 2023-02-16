@@ -6,7 +6,7 @@
 }
 
 .maps {
-  @include mini-container;
+  @include medium-container;
   @include shadow;
   width: 100%;
   border: unset;

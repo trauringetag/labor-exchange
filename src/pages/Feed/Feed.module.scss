@@ -1,0 +1,5 @@
+@import "src/general";
+
+.container {
+  @include small-container;
+}

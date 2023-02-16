@@ -15,16 +15,22 @@ $blue-2: #92D3F5;
 $blue-3: #355DFB;
 $shadow-color: rgba(34, 60, 80, 0.2);
 
-@mixin container {
+@mixin large-container {
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
 }
 
-@mixin mini-container {
+@mixin medium-container {
   width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
+}
+
+@mixin small-container {
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -38,7 +44,7 @@ $shadow-color: rgba(34, 60, 80, 0.2);
   font-size: $font-size;
   line-height: 36px;
   font-weight: 300;
-  color: $black-2;
+  color: $black-1;
 
   @media (max-width: 768px) {
     & {

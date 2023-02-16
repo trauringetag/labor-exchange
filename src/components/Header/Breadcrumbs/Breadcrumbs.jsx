@@ -11,7 +11,8 @@ const routes = [
     { path: 'legislation/legislative-changes', breadcrumb: 'Изменение законодательства'},
     { path: 'questionnaires', breadcrumb: 'Анкеты' },
     { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' },
-    { path: 'for-employers', breadcrumb: 'Работодателям' }
+    { path: 'for-employers', breadcrumb: 'Работодателям' },
+    { path: 'feed', breadcrumb: 'Новости' }
 ];
 
 const MapBreadcrumbs = (props) => {
@@ -36,8 +37,8 @@ const MapBreadcrumbs = (props) => {
 };
 
 const Breadcrumbs = props => (
-    <section className={classes.breadcrumbs}>
+    <aside className={classes.breadcrumbs}>
         <MapBreadcrumbs separator={props.separator} />
-    </section>
+    </aside>
 );
 export default Breadcrumbs;

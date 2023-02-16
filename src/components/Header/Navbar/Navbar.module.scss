@@ -10,7 +10,7 @@
 }
 
 .navigation {
-  @include container;
+  @include large-container;
   display: flex;
   align-items: center;
   justify-content: space-between;

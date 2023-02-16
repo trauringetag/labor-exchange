@@ -1,14 +1,14 @@
 @import "src/general";
 
 .block {
-  @include mini-container;
+  @include medium-container;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .text {
-  @include mini-container;
+  @include medium-container;
   color: $black-2;
   font-size: 18px;
   font-weight: 500;
