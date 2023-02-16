@@ -20,13 +20,14 @@
   object-fit: cover;
 }
 
-.title {
+.name {
   font-size: 18px;
   margin: 0;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .title {
+  .name {
     display: none;
   }
 }

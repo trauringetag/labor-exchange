@@ -1,7 +1,7 @@
 import classes from './SocialNetworks.module.scss';
-import { VK } from "../../../../CommonComponents/Social/VK";
-import { Telegram } from "../../../../CommonComponents/Social/Telegram";
-import { WhatsApp } from "../../../../CommonComponents/Social/WhatsApp";
+import { VK } from "../../../../CommonComponents/SocialIcons/VK";
+import { Telegram } from "../../../../CommonComponents/SocialIcons/Telegram";
+import { WhatsApp } from "../../../../CommonComponents/SocialIcons/WhatsApp";
 
 const SocialNetworks = () => (
     <ul className={classes.list}>

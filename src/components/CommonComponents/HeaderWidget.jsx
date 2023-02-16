@@ -37,7 +37,7 @@ ScrollTop.propTypes = {
     window: PropTypes.func
 };
 
-export const BackToTopButton = props => (
+export const HeaderWidget = props => (
     <ScrollTop {...props}>
         <Fab size={'small'}>
             <KeyboardArrowUpIcon />

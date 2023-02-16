@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { Fade } from "react-awesome-reveal";
 import { Outlet } from "react-router-dom";
-import { BackToTopButton } from "../components/CommonComponents/BackToTopButton";
+import { HeaderWidget } from "../components/CommonComponents/HeaderWidget";
 
 const Layout = () => (
     <div className={classes.wrapper} id={'anchor'}>
@@ -12,7 +12,7 @@ const Layout = () => (
             <Outlet />
         </Fade>
         <Footer />
-        <BackToTopButton />
+        <HeaderWidget />
     </div>
 );
 export default Layout;

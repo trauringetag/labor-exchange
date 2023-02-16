@@ -1,8 +1,8 @@
 import classes from './Grid.module.scss';
 import Logo from "../../CommonComponents/Logo/Logo";
-import Search from "./Search/Search";
 import Contacts from "./Contacts/Contacts";
 import LinksTabs from "./LinksTabs/LinksTabs";
+import Search from "../../Search/Search";
 
 const Grid = () => (
     <div className={classes.wrapper}>

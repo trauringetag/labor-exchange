@@ -8,7 +8,7 @@ const Logo = () => (
              src={ LogoIcon }
              alt={'Логотип'}
         />
-        <h2 className={classes.title}>ОКУ ЦЗН г. Карталы</h2>
+        <span className={classes.name}>ОКУ ЦЗН г. Карталы</span>
     </NavLink>
 );
 export default Logo;

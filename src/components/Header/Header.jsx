@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <header className={classes.wrapper} ref={ref}>
             <Navbar />
-            <Fade triggerOnce >
+            <Fade triggerOnce>
                 <section className={classes.container}>
                     <Breadcrumbs separator={'<'} />
                     <BasicServices />

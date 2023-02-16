@@ -3,7 +3,7 @@ import Steps from '../../../../assets/slider/steps.svg';
 import Judge from '../../../../assets/slider/judge.svg';
 import Office from '../../../../assets/slider/office.svg';
 import Interview from '../../../../assets/slider/interview.svg';
-import LinkButton from "../../../CommonComponents/LinkButton";
+import Segue from "../../../CommonComponents/Segue";
 
 const IconSelection = icon => {
     switch (icon) {
@@ -26,7 +26,7 @@ const Element = props => (
             <h2 className={classes.title}>{ props.title }</h2>
             <p className={classes.text}>{ props.text }</p>
             <nav>
-                <LinkButton to={ props.link } inscription={'Перейти'} />
+                <Segue to={ props.link } inscription={'Перейти'} />
             </nav>
         </div>
         <img className={classes.image} src={ IconSelection(props.image) } alt={'Фотография'} />
