@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 45px;
 
-  & > article {
+  & > div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -34,7 +34,6 @@
 .address {
   color: $blue-1;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .description,
@@ -51,5 +50,28 @@
 
   .address {
     font-size: 16px !important;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 20px !important;
+}
+
+.link {
+  text-decoration: none;
+
+  & > svg {
+    width: 36px;
+    height: 36px;
+    transition: .125s ease;
+  }
+  &:active {
+    svg {
+      transform: scale(1.1);
+    }
   }
 }

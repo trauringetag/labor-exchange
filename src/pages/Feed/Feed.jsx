@@ -4,9 +4,9 @@ import Search from "../../components/Search/Search";
 
 const Feed = () => (
     <Wrapper title={'Лента новостей'}>
-        <section className={classes.container}>
+        <div className={classes.wrapper}>
             <Search />
-        </section>
+        </div>
     </Wrapper>
 );
 export default Feed;

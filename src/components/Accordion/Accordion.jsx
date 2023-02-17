@@ -12,12 +12,13 @@ const Accordion = () => {
                  phone={ item.phone }
         />
     );
+
     return (
         <>
             <h3 className={classes.title}>ОКУ ЦЗН г. Карталы предоставляет государственные услуги</h3>
-            <section className={classes.accordion}>
+            <article className={classes.accordion}>
                 { displayAccordionServices }
-            </section>
+            </article>
         </>
     );
 };

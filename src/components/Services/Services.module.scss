@@ -2,20 +2,6 @@
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.title {
-  @include title(36px);
-}
-
-.underlining {
-  @include underlining;
-}
-
-.container {
-  display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,7 +35,7 @@
     margin: 0 auto;
     pointer-events: none;
   }
-  h3 {
+  span {
     font-size: 14px;
     color: $black-1;
     font-weight: 500;
@@ -67,7 +53,7 @@
     width: 64px;
     height: 64px;
   }
-  h3 {
+  span {
     font-size: 18px;
     color: $white-1;
   }
@@ -80,7 +66,7 @@
     &:hover {
       transform: scale(1);
     }
-    h3 {
+    span {
       font-size: 16px;
     }
   }
