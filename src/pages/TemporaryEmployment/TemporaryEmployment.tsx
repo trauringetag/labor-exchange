@@ -1,7 +1,8 @@
 import classes from './TemporaryEmployment.module.scss';
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
+import { FC } from "react";
 
-const TemporaryEmployment = () => (
+const TemporaryEmployment: FC = (): JSX.Element => (
     <Wrapper title={'Временное трудоустройство'}>
         <article className={classes.wrapper}>
             <p>Временное трудоустройство безработных граждан, испытывающих трудности в поиске работы. Служба занятости организует временные работы для трудоустройства безработных граждан.</p>

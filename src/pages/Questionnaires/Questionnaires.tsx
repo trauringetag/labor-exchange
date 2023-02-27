@@ -4,8 +4,9 @@ import Button from "@mui/material/Button";
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import ForCitizensFile from '../../assets/documents/questionnaires/for-citizens.doc';
 import ForEmployersFile from '../../assets/documents/questionnaires/for-employers.doc';
+import { FC } from "react";
 
-const Questionnaires = () => (
+const Questionnaires: FC = (): JSX.Element => (
     <Wrapper title={'Опрос для граждан и работадателей'}>
         <div className={classes.information}>
             <p className={`${classes.text} ${classes.bold}`}>Просим граждан и работодателей принять участие в опросе.</p>
@@ -31,4 +32,4 @@ const Questionnaires = () => (
         </div>
     </Wrapper>
 );
-export default  Questionnaires;
+export default Questionnaires;

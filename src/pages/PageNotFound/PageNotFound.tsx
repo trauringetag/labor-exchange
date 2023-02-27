@@ -2,8 +2,9 @@ import classes from './PageNotFound.module.scss';
 import { NotFoundCover } from "../../components/CommonComponents/NotFoundCover/NotFoundCover";
 import Segue from "../../components/CommonComponents/Segue";
 import { Fade } from "react-awesome-reveal";
+import { FC } from "react";
 
-const PageNotFound = () => (
+const PageNotFound: FC = (): JSX.Element => (
     <section className={classes.wrapper}>
         <NotFoundCover />
         <h2 className={classes.title}>Кажется что-то пошло не так!</h2>
