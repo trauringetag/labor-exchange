@@ -1,6 +1,7 @@
 import classes from './GoogleMaps.module.scss';
+import { FC } from "react";
 
-const GoogleMaps = () => (
+const GoogleMaps: FC = (): JSX.Element => (
     <>
         <h3 className={classes.title}>Как нас найти?</h3>
         <iframe

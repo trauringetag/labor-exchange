@@ -6,8 +6,9 @@ import Chart from "../../assets/icons/chart.svg";
 import Purse from "../../assets/icons/purse.svg";
 import More from "../../assets/icons/more.svg";
 import { Slide } from "react-awesome-reveal";
+import { FC } from "react";
 
-const Services = () => (
+const Services: FC = (): JSX.Element => (
     <Slide triggerOnce>
         <nav className={classes.wrapper}>
             <NavLink to={'/about'} className={classes.item}>

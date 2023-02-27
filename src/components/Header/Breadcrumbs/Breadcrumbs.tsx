@@ -1,8 +1,18 @@
 import classes from './Breadcrumbs.module.scss';
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { NavLink } from "react-router-dom";
+import { FC } from "react";
 
-const routes = [
+interface IRoute {
+    path: string;
+    breadcrumb: string;
+}
+
+interface IBreadcrumbs {
+    separator: string;
+}
+
+const routes: Array<IRoute> = [
     { path: '/', breadcrumb: 'Главная' },
     { path: 'news', breadcrumb: 'Новости' },
     { path: 'about', breadcrumb: 'О нас' },
@@ -15,7 +25,7 @@ const routes = [
     { path: 'feed', breadcrumb: 'Новости' }
 ];
 
-const MapBreadcrumbs = (props) => {
+const MapBreadcrumbs: FC<IBreadcrumbs> = ({ separator }): any => {
     const breadcrumbs = useBreadcrumbs(routes);
 
     return breadcrumbs.map(({ match, breadcrumb }, index) => {
@@ -30,13 +40,13 @@ const MapBreadcrumbs = (props) => {
                 >
                     {breadcrumb}
                 </NavLink>
-                {props.separator}
+                { separator }
             </div>
         );
     });
 };
 
-const Breadcrumbs = props => (
+const Breadcrumbs: FC<IBreadcrumbs> = (props): JSX.Element => (
     <aside className={classes.breadcrumbs}>
         <MapBreadcrumbs separator={props.separator} />
     </aside>

@@ -1,8 +1,10 @@
 import classes from './Information.module.scss';
 import { useSelector } from 'react-redux';
+import { FC } from "react";
+import { RootState } from "../../store/store";
 
-const Information = () => {
-    const information = useSelector(state => state.aboutPage.information);
+const Information: FC = (): JSX.Element => {
+    const information = useSelector((state: RootState) => state.aboutPage.information);
 
     return (
         <>

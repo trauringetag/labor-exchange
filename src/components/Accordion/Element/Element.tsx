@@ -4,6 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { FC } from "react";
 
 interface IElement {
     preview: string;
@@ -11,7 +12,7 @@ interface IElement {
     phone: string;
 }
 
-const Element = ({ ...props }: IElement): JSX.Element => (
+const Element: FC<IElement> = ({ ...props }): JSX.Element => (
     <Accordion className={classes.item}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.preview} component={'h3'}>{ props.preview }</Typography>

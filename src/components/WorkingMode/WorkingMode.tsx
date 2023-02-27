@@ -1,10 +1,12 @@
 import classes from './WorkingMode.module.scss';
 import { useSelector } from 'react-redux';
+import { FC } from "react";
+import { RootState } from "../../store/store";
 
-const WorkingMode = () => {
-    const workingMode = useSelector(state => state.aboutPage.workingMode);
+const WorkingMode: FC = (): JSX.Element => {
+    const workingMode = useSelector((state: RootState) => state.aboutPage.workingMode);
 
-    const displayWorkingMode = workingMode.map( item =>
+    const displayWorkingMode = workingMode.map(item =>
         <tr key={ item.id }>
             <td>{ item.leftColumn }</td>
             <td>{ item.rightColumn }</td>
