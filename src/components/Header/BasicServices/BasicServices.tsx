@@ -2,8 +2,20 @@ import classes from './BasicServices.module.scss';
 import Slider from "react-slick";
 import Element from "./Element/Element";
 import { useSelector } from 'react-redux';
+import { RootState } from "../../../store/store";
 
-const settings = {
+interface ISettings {
+    dots: boolean;
+    infinite: boolean;
+    speed: number;
+    slidesToShow: number;
+    slidesToScroll: number;
+    autoplay: boolean;
+    autoplaySpeed: number;
+    pauseOnHover: boolean;
+}
+
+const settings: ISettings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -15,10 +27,11 @@ const settings = {
 };
 
 const BasicServices = () => {
-    const sliderElements = useSelector(state => state.slider.sliderElements);
+    const sliderElements = useSelector((state: RootState) => state.slider.sliderElements);
 
-    const displaySliderElements = sliderElements.map( item =>
+    const displaySliderElements = sliderElements.map(item =>
         <Element key={ item.id }
+                 id={ item.id }
                  title={ item.title }
                  text={ item.text }
                  link={ item.link }
