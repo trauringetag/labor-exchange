@@ -6,8 +6,9 @@ import ForInvalidsFile from '../../assets/documents/regulations/for-invalids.doc
 import ForPrePensionersFile from '../../assets/documents/regulations/for-pre-pensioners.doc';
 import ReviewChangesFile from '../../assets/documents/regulations/review-changes.doc';
 import SuitableJobFile from '../../assets/documents/regulations/suitable-job.doc';
+import { FC } from "react";
 
-const LegislativeChanges = () => (
+const LegislativeChanges: FC = (): JSX.Element => (
     <Wrapper title={'Изменения в законодательстве о занятости населения (с 01.01.2019г.)'}>
         <article className={classes.wrapper}>
             <p>Информация составлена на основе системы КонсультантПлюс по изменениям Закона РФ от 19.04.1991 г. № 1032-1 (ред. от 03.10.2018 г.) "О занятости населения в Российской Федерации". Начало действия редакции - 01.01.2019 г.</p>

@@ -1,8 +1,9 @@
 import classes from './Legislation.module.scss';
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import { Link } from 'react-router-dom';
+import { FC } from "react";
 
-const Legislation = () => (
+const Legislation: FC = (): JSX.Element => (
     <Wrapper title={'Законодательство'}>
         <ul className={classes.list}>
             <li>

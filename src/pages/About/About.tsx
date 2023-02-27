@@ -3,8 +3,9 @@ import WorkingMode from "../../components/WorkingMode/WorkingMode";
 import Information from "../../components/Information/Information";
 import Accordion from "../../components/Accordion/Accordion";
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
+import { FC } from "react";
 
-const About = () => (
+const About: FC = (): JSX.Element => (
     <Wrapper title={'ОКУ ЦЗН г. Карталы'}>
         <Information />
         <WorkingMode />

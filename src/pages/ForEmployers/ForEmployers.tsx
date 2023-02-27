@@ -8,8 +8,9 @@ import ForeignWorkersFile from '../../assets/documents/employers/foreign-workers
 import PublicWorksFile from '../../assets/documents/employers/public-works.docx';
 import HandicappedControlFile from '../../assets/documents/employers/handicapped-control.docx';
 import ForeignLaborForceFile from '../../assets/documents/employers/foreign-labor-force.docx';
+import { FC } from "react";
 
-const ForEmployers = () => (
+const ForEmployers: FC = (): JSX.Element => (
     <Wrapper title={'Работодателям'}>
         <ul className={classes.list}>
             <li>

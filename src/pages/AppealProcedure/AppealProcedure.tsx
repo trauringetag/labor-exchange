@@ -1,7 +1,8 @@
 import classes from './AppealProcedure.module.scss';
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
+import { FC } from "react";
 
-const AppealProcedure = () => (
+const AppealProcedure: FC = (): JSX.Element => (
     <Wrapper title={'Порядок обжалования'}>
         <article className={classes.wrapper}>
             <p>Судебный и административный порядок обжалования нормативных правовых актов, решений Главного управления по труду и занятости населения Челябинской области, действий (бездействия) должностных лиц.</p>

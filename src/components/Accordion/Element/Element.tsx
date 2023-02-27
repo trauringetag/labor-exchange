@@ -5,8 +5,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
-const Element = props => (
-    <Accordion className={classes.item} component={'article'}>
+interface IElement {
+    preview: string;
+    cabinet: number;
+    phone: string;
+}
+
+const Element = ({ ...props }: IElement): JSX.Element => (
+    <Accordion className={classes.item}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.preview} component={'h3'}>{ props.preview }</Typography>
         </AccordionSummary>
