@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/labor-exchange/static/css/main.1e94be7b.css",
-    "main.js": "/labor-exchange/static/js/main.564abe61.js",
+    "main.js": "/labor-exchange/static/js/main.4c667721.js",
     "static/js/787.0f39e4dd.chunk.js": "/labor-exchange/static/js/787.0f39e4dd.chunk.js",
     "static/media/review-changes.doc": "/labor-exchange/static/media/review-changes.b8919b4c88b2423135e3.doc",
     "static/media/foreign-labor-force.docx": "/labor-exchange/static/media/foreign-labor-force.52c6cefe9d2b84496575.docx",
@@ -65,11 +65,11 @@
     "index.html": "/labor-exchange/index.html",
     "static/media/more.svg": "/labor-exchange/static/media/more.14df0133dc4048e124059c19a8b211ec.svg",
     "main.1e94be7b.css.map": "/labor-exchange/static/css/main.1e94be7b.css.map",
-    "main.564abe61.js.map": "/labor-exchange/static/js/main.564abe61.js.map",
+    "main.4c667721.js.map": "/labor-exchange/static/js/main.4c667721.js.map",
     "787.0f39e4dd.chunk.js.map": "/labor-exchange/static/js/787.0f39e4dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e94be7b.css",
-    "static/js/main.564abe61.js"
+    "static/js/main.4c667721.js"
   ]
 }
