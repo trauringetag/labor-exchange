@@ -10,10 +10,11 @@ import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
 import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment";
 import ForEmployers from "./pages/ForEmployers/ForEmployers";
 import Feed from "./pages/Feed/Feed";
+import { FC } from "react";
 
-const App = () => (
+const App: FC = (): JSX.Element => (
     <Routes>
-        <Route to={'/'} element={<Layout />}>
+        <Route path={'/'} element={<Layout />}>
             <Route index element={<Official />} />
             <Route path={'labor-exchange'} element={<Navigate to={'/'} />} />
             <Route path={'*'} element={<PageNotFound />} />
