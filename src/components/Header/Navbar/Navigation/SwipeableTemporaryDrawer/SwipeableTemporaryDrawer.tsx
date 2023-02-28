@@ -1,34 +1,44 @@
-import classes from './DrawerComponent.module.scss';
-import Button from "@mui/material/Button";
+import * as React from 'react';
+import classes from './SwipeableTemporaryDrawer.module.scss';
+import Box from '@mui/material/Box';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from "@mui/icons-material/Menu";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import { NavLink } from "react-router-dom";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import HomeIcon from "@mui/icons-material/Home";
-import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
-import DescriptionIcon from '@mui/icons-material/Description';
-import ModeIcon from '@mui/icons-material/Mode';
-import GavelIcon from '@mui/icons-material/Gavel';
-import { useState, Fragment } from "react";
-import WorkIcon from '@mui/icons-material/Work';
-import NewspaperIcon from '@mui/icons-material/Newspaper';
+import DescriptionIcon from "@mui/icons-material/Description";
+import GavelIcon from "@mui/icons-material/Gavel";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
+import ModeIcon from "@mui/icons-material/Mode";
+import WorkIcon from "@mui/icons-material/Work";
+import { FC } from "react";
 
-const setActive = ({ isActive }) => isActive ? `${classes.link} ${classes.active}` : classes.link;
+type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
-const DrawerComponent = () => {
-    const [state, setState] = useState({ right: false });
+const setActive = ({ isActive }: { isActive: boolean }) =>
+    isActive ? `${classes.link} ${classes.active}` : classes.link;
 
-    const toggleDrawer = (anchor, open) => (event) => {
-        if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) return;
+const SwipeableTemporaryDrawer: FC = (): JSX.Element => {
+    const [state, setState] = React.useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
+
+    const toggleDrawer = (anchor: Anchor, open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+        if (event && event.type === 'keydown' &&
+            ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')) return;
         setState({ ...state, [anchor]: open });
     };
 
-    const list = (anchor) => (
+    const list = (anchor: Anchor) => (
         <Box
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
             role={'presentation'}
@@ -107,24 +117,28 @@ const DrawerComponent = () => {
     const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     return (
-        <Fragment key={'right'}>
-            <Button className={classes.button}
-                    onClick={toggleDrawer('right', true)}
-            >
-                <MenuIcon fontSize={'medium'} />
-            </Button>
-            <SwipeableDrawer
-                anchor={'right'}
-                className={classes.wrapper}
-                disableBackdropTransition={!iOS}
-                disableDiscovery={iOS}
-                open={state['right']}
-                onClose={toggleDrawer('right', false)}
-                onOpen={toggleDrawer('right', true)}
-            >
-                {list('right')}
-            </SwipeableDrawer>
-        </Fragment>
+        <>
+            {(['right'] as const).map((anchor) => (
+                <React.Fragment key={anchor}>
+                    <Button className={classes.button}
+                            onClick={toggleDrawer(anchor, true)}
+                    >
+                        <MenuIcon fontSize={'medium'} />
+                    </Button>
+                    <SwipeableDrawer
+                        className={classes.wrapper}
+                        anchor={anchor}
+                        disableBackdropTransition={!iOS}
+                        disableDiscovery={iOS}
+                        open={state[anchor]}
+                        onClose={toggleDrawer(anchor, false)}
+                        onOpen={toggleDrawer(anchor, true)}
+                    >
+                        {list(anchor)}
+                    </SwipeableDrawer>
+                </React.Fragment>
+            ))}
+        </>
     );
 };
-export default DrawerComponent;
+export default SwipeableTemporaryDrawer;

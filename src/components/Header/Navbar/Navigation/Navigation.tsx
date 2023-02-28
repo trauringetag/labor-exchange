@@ -1,12 +1,12 @@
 import classes from './Navigation.module.scss';
 import PhoneComponent from "./PhoneComponent/PhoneComponent";
-import DrawerComponent from "./DrawerComponent/DrawerComponent";
 import { FC } from "react";
+import SwipeableTemporaryDrawer from "./SwipeableTemporaryDrawer/SwipeableTemporaryDrawer";
 
 const Navigation: FC = (): JSX.Element => (
     <div className={classes.wrapper}>
         <PhoneComponent />
-        <DrawerComponent />
+        <SwipeableTemporaryDrawer />
     </div>
 );
 export default Navigation;
