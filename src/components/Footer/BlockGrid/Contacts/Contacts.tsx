@@ -1,8 +1,9 @@
 import classes from './Contacts.module.scss';
-import { VK } from "../../../CommonComponents/SocialIcons/VK";
-import { Telegram } from "../../../CommonComponents/SocialIcons/Telegram";
-import { WhatsApp } from "../../../CommonComponents/SocialIcons/WhatsApp";
 import { FC } from "react";
+import { HandySvg } from 'handy-svg';
+import VKIcon from '../../../../assets/social/vk.svg';
+import TelegramIcon from '../../../../assets/social/telegram.svg';
+import WhatsAppIcon from '../../../../assets/social/whatsapp.svg';
 
 const Contacts: FC = (): JSX.Element => (
     <aside className={classes.connection}>
@@ -20,21 +21,21 @@ const Contacts: FC = (): JSX.Element => (
                target={'_blank'}
                rel={'noopener noreferrer'}
             >
-                <VK />
+                <HandySvg src={VKIcon} className={classes.vk} />
             </a>
             <a className={classes.link}
                href={'https://t.me/AnatoliyVdovin'}
                target={'_blank'}
                rel={'noopener noreferrer'}
             >
-                <Telegram />
+                <HandySvg src={TelegramIcon} className={classes.telegram} />
             </a>
             <a className={classes.link}
                href={'https://wa.me/73513355780'}
                target={'_blank'}
                rel={'noopener noreferrer'}
             >
-                <WhatsApp />
+                <HandySvg src={WhatsAppIcon} className={classes.whatsapp} />
             </a>
         </div>
     </aside>
