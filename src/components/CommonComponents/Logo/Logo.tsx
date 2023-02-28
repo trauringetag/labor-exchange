@@ -1,8 +1,9 @@
 import classes from './Logo.module.scss';
 import { NavLink } from "react-router-dom";
 import LogoIcon from "../../../assets/logo.svg";
+import { FC } from "react";
 
-const Logo = () => (
+const Logo: FC = (): JSX.Element => (
     <NavLink to={'/'} className={classes.link}>
         <img className={classes.icon}
              src={ LogoIcon }

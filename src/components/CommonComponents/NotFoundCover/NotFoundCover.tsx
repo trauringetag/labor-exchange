@@ -1,6 +1,7 @@
 import classes from './NotFoundCover.module.scss';
+import { FC } from "react";
 
-export const NotFoundCover = () => (
+export const NotFoundCover: FC = (): JSX.Element => (
     <>
         <svg className={classes.atom} id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
             <g id="color">
