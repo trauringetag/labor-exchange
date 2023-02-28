@@ -2,8 +2,9 @@ import classes from './Contacts.module.scss';
 import { VK } from "../../../CommonComponents/SocialIcons/VK";
 import { Telegram } from "../../../CommonComponents/SocialIcons/Telegram";
 import { WhatsApp } from "../../../CommonComponents/SocialIcons/WhatsApp";
+import { FC } from "react";
 
-const Contacts = () => (
+const Contacts: FC = (): JSX.Element => (
     <aside className={classes.connection}>
         <div>
             <a className={classes.phone} href={'tel:8 (951) 235-85-32'}>8 (951) 235-85-32</a>

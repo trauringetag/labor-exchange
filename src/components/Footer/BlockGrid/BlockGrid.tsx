@@ -3,8 +3,9 @@ import Logo from "../../CommonComponents/Logo/Logo";
 import Contacts from "./Contacts/Contacts";
 import LinksTabs from "./LinksTabs/LinksTabs";
 import Search from "../../Search/Search";
+import { FC } from "react";
 
-const BlockGrid = () => (
+const BlockGrid: FC = (): JSX.Element => (
     <section className={classes.wrapper}>
         <Logo />
         <Search />

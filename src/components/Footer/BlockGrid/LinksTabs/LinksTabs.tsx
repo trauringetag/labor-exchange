@@ -1,12 +1,18 @@
+import * as React from 'react';
 import classes from './LinksTabs.module.scss';
-import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function TabPanel (props) {
+interface ITabPanelProps {
+    children?: React.ReactNode;
+    index: number;
+    value: number;
+}
+
+function TabPanel (props: ITabPanelProps) {
     const { children, value, index, ...other } = props;
 
     return (
@@ -26,13 +32,7 @@ function TabPanel (props) {
     );
 }
 
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
-
-function a11yProps (index) {
+function a11yProps (index: number) {
     return {
         id: `tab-${index}`,
         'aria-controls': `tabpanel-${index}`
@@ -41,7 +41,7 @@ function a11yProps (index) {
 
 const LinksTabs = () => {
     const [value, setValue] = useState(0);
-    const handleChange = (event, newValue) => setValue(newValue);
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => setValue(newValue);
 
     return (
         <Box sx={{ width: '100%' }}>
