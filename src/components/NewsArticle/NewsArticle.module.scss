@@ -1,0 +1,45 @@
+@import "src/general";
+
+.wrapper {
+  background-color: $white-2;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include shadow;
+}
+
+.cover {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.underline {
+  @include underlining;
+}
+
+.text {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.date {
+  font-weight: 600;
+  font-size: 14px;
+  color: $black-2;
+}

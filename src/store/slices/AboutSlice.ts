@@ -122,11 +122,9 @@ const initialState = {
     }
 };
 
-export const AboutSlice = createSlice(
-    {
-        name: 'about',
-        initialState,
-        reducers: { }
-    }
-);
+export const AboutSlice = createSlice({
+    name: 'about',
+    initialState,
+    reducers: { }
+});
 export default AboutSlice.reducer;

@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import AboutSlice from './slices/AboutSlice';
 import SliderSlice from "./slices/SliderSlice";
+import FeedSlice from "./slices/FeedSlice";
 
 export const store = configureStore({
     reducer: {
         slider: SliderSlice,
-        aboutPage: AboutSlice
+        aboutPage: AboutSlice,
+        feedPage: FeedSlice
     }
 });
 
