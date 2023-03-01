@@ -13,6 +13,7 @@ export const FeedSlice = createSlice({
             state.articles = action.payload;
         }
     }
+
 });
 export default FeedSlice.reducer;
 export const { getAllArticles } = FeedSlice.actions;
