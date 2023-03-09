@@ -2,7 +2,7 @@ import classes from './Feed.module.scss';
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import SearchField from "../../components/SearchField/SearchField";
 import { FC, useEffect } from "react";
-import NewsArticle from "../../components/NewsArticle/NewsArticle";
+import PreviewArticle from "../../components/PreviewArticle/PreviewArticle";
 import { RootState } from "../../store/store";
 import axios from 'axios';
 import { getAllArticles } from "../../store/slices/FeedSlice";
@@ -30,7 +30,7 @@ const Feed: FC = (): JSX.Element => {
     }, [dispatch]);
 
     const displayArticles = articles.map((item: IDisplayArticles) =>
-        <NewsArticle key={item.id} { ...item } />
+        <PreviewArticle key={item.id} { ...item } />
     );
 
     return (

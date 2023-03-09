@@ -1,5 +1,6 @@
-import classes from './NewsArticle.module.scss';
+import classes from './PreviewArticle.module.scss';
 import { FC } from "react";
+import Segue from "../CommonComponents/Segue";
 
 interface INewsArticle {
     id?: number;
@@ -9,7 +10,7 @@ interface INewsArticle {
     updatedAt: string;
 }
 
-const NewsArticle: FC<INewsArticle> = (props): JSX.Element => {
+const PreviewArticle: FC<INewsArticle> = (props): JSX.Element => {
     const parseDate = props.updatedAt
         .replace('T', ' ')
         .replace('.000Z', '');
@@ -25,8 +26,9 @@ const NewsArticle: FC<INewsArticle> = (props): JSX.Element => {
                 <hr className={classes.underline}/>
                 <p className={classes.text}>{ props.preview }</p>
                 <time className={classes.date} dateTime={ props.updatedAt }>{ parseDate }</time>
+                <Segue to={`/feed/id${props.id}`} inscription={'Читать далее...'} />
             </div>
         </article>
     );
 };
-export default NewsArticle;
+export default PreviewArticle;

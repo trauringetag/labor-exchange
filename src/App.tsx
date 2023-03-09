@@ -11,6 +11,7 @@ import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment
 import ForEmployers from "./pages/ForEmployers/ForEmployers";
 import Feed from "./pages/Feed/Feed";
 import { FC } from "react";
+import SingleArticle from "./pages/SingleArticle/SingleArticle";
 
 const App: FC = (): JSX.Element => (
     <Routes>
@@ -26,6 +27,7 @@ const App: FC = (): JSX.Element => (
             <Route path={'temporary-employment'} element={<TemporaryEmployment />} />
             <Route path={'for-employers'} element={<ForEmployers />} />
             <Route path={'feed'} element={<Feed />} />
+            <Route path={'feed/id:id'} element={<SingleArticle />} />
         </Route>
     </Routes>
 );
