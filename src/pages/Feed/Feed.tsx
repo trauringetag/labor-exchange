@@ -10,7 +10,7 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { HandySvg } from "handy-svg";
 import LoaderIcon from '../../assets/loader.svg';
 
-interface IDisplayArticles {
+interface IArticles {
     id?: number;
     cover: string;
     head: string;
@@ -29,7 +29,7 @@ const Feed: FC = (): JSX.Element => {
         });
     }, [dispatch]);
 
-    const displayArticles = articles.map((item: IDisplayArticles) =>
+    const displayArticles = articles.map((item: IArticles) =>
         <PreviewArticle key={item.id} { ...item } />
     );
 
