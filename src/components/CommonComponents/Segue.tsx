@@ -10,7 +10,7 @@ interface ISegue {
 
 const Segue: FC<ISegue> = ({ ...props }): JSX.Element => (
     <Link className={classes.link} to={ props.to } >
-        <Button className={classes.button} variant="contained">{ props.inscription }</Button>
+        <Button className={classes.button} variant={'contained'}>{ props.inscription }</Button>
     </Link>
 );
 export default Segue;
