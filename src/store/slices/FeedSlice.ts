@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     articles: [],
-    singleArticle: {}
+    singleArticle: {},
+    isLoaded: false
 };
 
 export const FeedSlice = createSlice({
@@ -14,9 +15,11 @@ export const FeedSlice = createSlice({
         },
         getSingleArticle(state, action) {
             state.singleArticle = action.payload;
+        },
+        changeIsLoaded(state, action) {
+            state.isLoaded = action.payload;
         }
     }
-
 });
 export default FeedSlice.reducer;
-export const { getAllArticles, getSingleArticle } = FeedSlice.actions;
+export const { getAllArticles, getSingleArticle, changeIsLoaded } = FeedSlice.actions;

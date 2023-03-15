@@ -5,7 +5,7 @@ import { FC, useEffect } from "react";
 import PreviewArticle from "../../components/PreviewArticle/PreviewArticle";
 import { RootState } from "../../store/store";
 import axios from 'axios';
-import { getAllArticles } from "../../store/slices/FeedSlice";
+import { getAllArticles, changeIsLoaded } from "../../store/slices/FeedSlice";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { HandySvg } from "handy-svg";
 import LoaderIcon from '../../assets/loader.svg';
@@ -22,12 +22,17 @@ const Feed: FC = (): JSX.Element => {
     const dispatch = useAppDispatch();
 
     const articles = useAppSelector((state: RootState) => state.feedPage.articles);
+    const field = useAppSelector((state: RootState) => state.searchField.field);
+    const isLoaded = useAppSelector((state: RootState) => state.feedPage.isLoaded);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/articles').then(response => {
+        axios.get(`http://localhost:8080/api/articles?head=${field}`).then(response => {
             dispatch(getAllArticles(response.data));
+            dispatch(changeIsLoaded(true));
         });
-    }, [dispatch]);
+
+        return () => { dispatch(changeIsLoaded(false)); }
+    }, [dispatch, field]);
 
     const displayArticles = articles.map((item: IArticles) =>
         <PreviewArticle key={item.id} { ...item } />
@@ -38,9 +43,9 @@ const Feed: FC = (): JSX.Element => {
             <div className={classes.wrapper}>
                 <SearchField />
                 {
-                    displayArticles.length !== 0
-                        ? displayArticles
-                        : <HandySvg src={ LoaderIcon } />
+                    isLoaded
+                        ? displayArticles.length !== 0 ? displayArticles : <h3 className={classes.empty}>По запросу <span>{ field }</span> ничего не найдено!</h3>
+                        : <HandySvg src={ LoaderIcon} />
                 }
             </div>
         </Wrapper>
