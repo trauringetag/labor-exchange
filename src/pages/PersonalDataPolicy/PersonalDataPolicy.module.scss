@@ -1,0 +1,17 @@
+@import "src/general";
+
+.wrapper {
+  @include content-block;
+}
+
+.title {
+  text-align: center;
+}
+
+.link {
+  color: $blue-3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

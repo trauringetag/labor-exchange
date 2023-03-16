@@ -23,7 +23,8 @@ const routes: Array<IRoute> = [
     { path: 'temporary-employment', breadcrumb: 'Временное трудоустройство' },
     { path: 'for-employers', breadcrumb: 'Работодателям' },
     { path: 'feed', breadcrumb: 'Новости' },
-    { path: 'feed/*', breadcrumb: 'Статья' }
+    { path: 'feed/*', breadcrumb: 'Статья' },
+    { path: 'personal-data-policy', breadcrumb: 'Политика обработки персональных данных' }
 ];
 
 const MapBreadcrumbs: FC<IBreadcrumbs> = ({ separator }): any => {

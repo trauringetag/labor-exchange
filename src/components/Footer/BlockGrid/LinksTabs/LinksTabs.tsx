@@ -75,6 +75,7 @@ const LinksTabs = () => {
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
                 <Link to={'/legislation/legislative-changes'}>Изменение законодательства</Link>
                 <Link to={'/temporary-employment'}>Временное трудоустройство</Link>
+                <Link to={'/personal-data-policy'}>Политика обработки персональных данных</Link>
             </TabPanel>
         </Box>
     );
