@@ -23,7 +23,7 @@ const Mailing = () => {
                 </div>
                 <div className={classes.agreement}>
                     <Checkbox onClick={ () => dispatch(setIsAgree(!isAgree)) }/>
-                    <label>Я ознакомлен с <Link className={classes.link} to={'/personal-data-policy'}>Политикой обработки персональных данных!</Link></label>
+                    <label>Я ознакомлен с <Link className={classes.link} to={'/personal-data-policy'}>Политикой обработки персональных данных</Link>!</label>
                 </div>
             </form>
         </aside>

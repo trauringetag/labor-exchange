@@ -12,7 +12,7 @@ const SearchField: FC = (): JSX.Element => {
 
     useEffect(() => {
         return () => { dispatch(updateField('')); }
-    }, []);
+    }, [dispatch]);
 
     return (
         <form>
