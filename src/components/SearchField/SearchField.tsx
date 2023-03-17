@@ -16,7 +16,7 @@ const SearchField: FC = (): JSX.Element => {
 
     return (
         <form>
-            <input className={classes.search}
+            <input className={classes.field}
                    type={'search'}
                    placeholder={'Поиск...'}
                    onChange={ onChangeInput }

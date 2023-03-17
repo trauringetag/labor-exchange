@@ -3,13 +3,15 @@ import AboutSlice from './slices/AboutSlice';
 import SliderSlice from "./slices/SliderSlice";
 import FeedSlice from "./slices/FeedSlice";
 import SearchSlice from "./slices/SearchSlice";
+import MailingSlice from "./slices/MailingSlice";
 
 export const store = configureStore({
     reducer: {
         slider: SliderSlice,
         aboutPage: AboutSlice,
         feedPage: FeedSlice,
-        searchField: SearchSlice
+        searchField: SearchSlice,
+        mailing: MailingSlice
     }
 });
 
