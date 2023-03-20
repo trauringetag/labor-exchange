@@ -26,7 +26,7 @@ const Mailing = () => {
             alert('Вы успешно подписались на рассылку!');
         }).catch(error => {
             dispatch(setStatus(error.response.status));
-            alert('Внимание! Что-то пошло не так...')
+            alert(error.response.data.message);
         });
     };
 
