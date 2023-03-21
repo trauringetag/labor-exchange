@@ -24,7 +24,7 @@ function ScrollTop(props: IProps) {
         const anchor = (
             (event.target as HTMLDivElement).ownerDocument || document
         ).querySelector('#anchor');
-        if (anchor) anchor.scrollIntoView({block: 'start', behavior: 'smooth'});
+        if (anchor) anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
     };
 
     return (
