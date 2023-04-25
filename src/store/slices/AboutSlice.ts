@@ -1,121 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    services: [
-        {
-            id: 1,
-            preview: 'по содействию гражданам в поиске подходящей работы',
-            cabinet: 102,
-            phone: '2-24-95'
-        },
-        {
-            id: 2,
-            preview: 'работодателям в подборе необходимых работников',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 3,
-            preview: 'по информированию о положении на рынке труда в субъекте Российской Федерации',
-            cabinet: 104,
-            phone: '2-24-95'
-        },
-        {
-            id: 4,
-            preview: 'по осуществлению социальных выплат гражданам, признанным в установленном порядке безработными',
-            cabinet: 204,
-            phone: '2-24-77'
-        },
-        {
-            id: 5,
-            preview: 'по организации профессиональной ориентации граждан в целях выбора сферы деятельности (профессии), трудоустройства, профессионального обучении',
-            cabinet: 104,
-            phone: '2-24-95'
-        },
-        {
-            id: 6,
-            preview: 'по психологической поддержке безработных граждан',
-            cabinet: 104,
-            phone: '2-24-95'
-        },
-        {
-            id: 7,
-            preview: 'по социальной адаптации безработных граждан на рынке труда',
-            cabinet: 104,
-            phone: '2-24-95'
-        },
-        {
-            id: 8,
-            preview: 'по организации временного трудоустройства: несовершеннолетних граждан в возрасте от 14 до 18 лет в свободное от учебы время',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 9,
-            preview: 'безработных граждан, испытывающих трудности в поиске работы',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 10,
-            preview: 'по содействию самозанятости безработных граждан',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 11,
-            preview: 'по организации проведения оплачиваемых общественных работ',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 12,
-            preview: 'безработных граждан в возрасте от 18 до 20 лет из числа выпускников образовательных учреждений начального и среднего профессионального образования, ищущих работу впервые',
-            cabinet: 206,
-            phone: '2-24-95'
-        },
-        {
-            id: 13,
-            preview: 'по профессиональной подготовке, переподготовке и повышению квалификации безработных граждан',
-            cabinet: 104,
-            phone: '2-24-95'
-        },
-    ],
-    workingMode: [
-        {
-            id: 1,
-            leftColumn: 'Понедельник',
-            rightColumn: '8:30 – 17:30'
-        },
-        {
-            id: 2,
-            leftColumn: 'Вторник',
-            rightColumn: '8:30 – 17:30'
-        },
-        {
-            id: 3,
-            leftColumn: 'Среда',
-            rightColumn: '8:30 – 17:30'
-        },
-        {
-            id: 4,
-            leftColumn: 'Четверг',
-            rightColumn: '8:30 – 17:30'
-        },
-        {
-            id: 5,
-            leftColumn: 'Пятница',
-            rightColumn: '8:30 – 16:15'
-        },
-        {
-            id: 6,
-            leftColumn: 'Обед',
-            rightColumn: '12:15 – 13:00'
-        }
-    ],
+    services: [],
+    workingMode: [],
     information: {
-        legalAddress: '457352, г. Карталы, Челябинская область, ул. Свердлова 12',
-        supervisor: 'Николай Александрович Плохих',
+        legalAddress: '457352, Челябинская область, Карталинский район, город Карталы, ул. Свердлова, д.12',
+        supervisor: 'Климова Ольга Александровна',
         accountingPhone: '(35133) 2-24-7',
         employmentDepartmentPhone: '(35133) 2-24-95',
         hotlinePhone: '2-23-51'
@@ -125,6 +15,14 @@ const initialState = {
 export const AboutSlice = createSlice({
     name: 'about',
     initialState,
-    reducers: { }
+    reducers: {
+        setAllServices(state, action) {
+            state.services = action.payload;
+        },
+        setAllWorkingMode(state, action) {
+            state.workingMode = action.payload;
+        }
+    }
 });
 export default AboutSlice.reducer;
+export const { setAllServices, setAllWorkingMode } = AboutSlice.actions;

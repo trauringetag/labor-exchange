@@ -16,7 +16,8 @@ const style = {
     outline: 'none',
     borderRadius: '25px',
     boxShadow: 24,
-    p: 4
+    p: 4,
+    textAlign: 'center'
 };
 
 interface IModalWindow {

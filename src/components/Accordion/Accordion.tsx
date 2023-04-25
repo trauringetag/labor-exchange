@@ -1,15 +1,32 @@
 import classes from './Accordion.module.scss';
 import Element from "./Element/Element";
-import { useSelector } from 'react-redux';
 import { RootState } from "../../store/store";
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import axios from "axios";
+import { setAllServices } from "../../store/slices/AboutSlice";
+
+interface IServices {
+    id: number,
+    description: string,
+    cabinet: number,
+    phone: string
+}
 
 const Accordion: FC = (): JSX.Element => {
-    const services = useSelector((state: RootState) => state.aboutPage.services);
+    const dispatch = useAppDispatch();
 
-    const displayAccordionServices = services.map(item =>
+    const services = useAppSelector((state: RootState) => state.aboutPage.services);
+
+    useEffect(() => {
+        axios('http://localhost:8080/api/services').then(response => {
+            dispatch(setAllServices(response.data));
+        });
+    }, [dispatch]);
+
+    const displayAccordionServices = services.map((item: IServices) =>
         <Element key={ item.id }
-                 preview={ item.preview }
+                 preview={ item.description }
                  cabinet={ item.cabinet }
                  phone={ item.phone }
         />
