@@ -7,10 +7,10 @@ interface IWrapper {
 }
 
 const Wrapper: FC<IWrapper> = ({ children, title }): JSX.Element => (
-    <section className={classes.container}>
+    <div className={classes.container}>
         <h2 className={classes.title}>{ title }</h2>
         <hr className={classes.underlining} />
         { children }
-    </section>
+    </div>
 );
 export default Wrapper;

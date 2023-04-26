@@ -4,7 +4,7 @@ import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 
 const PersonalDataPolicy: FC = (): JSX.Element => (
     <Wrapper title={'Политика обработки персональных данных'}>
-        <div className={classes.wrapper}>
+        <section className={classes.wrapper}>
             <h3 className={classes.title}>1. Общие положения:</h3>
             <p>
                 1.1. Областное казённое учреждение Центр Занятости Населения (далее по тексту - Оператор) ставит соблюдение прав и свобод граждан одним из важнейших условий осуществления своей деятельности.
@@ -63,7 +63,7 @@ const PersonalDataPolicy: FC = (): JSX.Element => (
                 <br/>
                 7.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. В случае существенных изменений Пользователю может быть выслана информация на указанный им электронный адрес.
             </p>
-        </div>
+        </section>
     </Wrapper>
 );
 export default PersonalDataPolicy;

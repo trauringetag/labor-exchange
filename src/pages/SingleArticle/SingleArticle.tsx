@@ -44,7 +44,7 @@ const SingleArticle: FC = (): JSX.Element => {
             {
                 Object.keys(article).length === 0
                     ? <HandySvg src={ LoaderIcon }/>
-                    : <div className={classes.wrapper}>
+                    : <section className={classes.wrapper}>
                         <div className={classes.container}>
                             <div className={classes.time}>
                                 <AccessTimeIcon fontSize={'small'}/>
@@ -64,7 +64,7 @@ const SingleArticle: FC = (): JSX.Element => {
                              src={article.cover}
                              alt={'Обложка'}
                         />
-                </div>
+                </section>
             }
         </Wrapper>
     );

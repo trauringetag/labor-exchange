@@ -76,7 +76,7 @@ const LinksTabs = () => {
                 <Link to={'/temporary-employment'}>Временное трудоустройство</Link>
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <Link to={'/'}>История города</Link>
+                <Link to={'/city-history'}>История города</Link>
             </TabPanel>
         </Box>
     );

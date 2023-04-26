@@ -10,7 +10,7 @@ import { FC } from "react";
 
 const LegislativeChanges: FC = (): JSX.Element => (
     <Wrapper title={'Изменения в законодательстве о занятости населения (с 01.01.2019г.)'}>
-        <article className={classes.wrapper}>
+        <section className={classes.wrapper}>
             <p>Информация составлена на основе системы КонсультантПлюс по изменениям Закона РФ от 19.04.1991 г. № 1032-1 (ред. от 03.10.2018 г.) "О занятости населения в Российской Федерации". Начало действия редакции - 01.01.2019 г.</p>
             <p>Раздел находится в разработке...</p>
             <p><a className={classes.upper} href={'http://www.consultant.ru/document/cons_doc_LAW_308156/'} target={'_blank'} rel={'noopener noreferrer'}>Федеральный закон</a> от 03.10.2018 г. № 350-ФЗ "О внесении изменений в отдельные законодательные акты Российской Федерации по вопросам назначения и выплаты пенсий".</p>
@@ -29,7 +29,7 @@ const LegislativeChanges: FC = (): JSX.Element => (
                     <Link className={classes.link} to={SuitableJobFile} target={'_blank'} download={'Подходящая работа'}>подходящая работа</Link>
                 </li>
             </ul>
-        </article>
+        </section>
     </Wrapper>
 );
 export default LegislativeChanges;

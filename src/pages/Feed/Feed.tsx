@@ -40,14 +40,14 @@ const Feed: FC = (): JSX.Element => {
 
     return (
         <Wrapper title={'Лента новостей'}>
-            <div className={classes.wrapper}>
+            <section className={classes.wrapper}>
                 <SearchField />
                 {
                     isLoaded
                         ? displayArticles.length !== 0 ? displayArticles : <h3 className={classes.empty}>По запросу <span>{ field }</span> ничего не найдено!</h3>
                         : <HandySvg src={ LoaderIcon} />
                 }
-            </div>
+            </section>
         </Wrapper>
     );
 };

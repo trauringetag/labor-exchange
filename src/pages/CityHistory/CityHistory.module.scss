@@ -1,0 +1,35 @@
+@import "src/general";
+
+.wrapper {
+  line-height: 24px;
+}
+
+.paragraph {
+  font-size: 18px;
+  color: $black-2;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.image {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 890px) {
+  .image {
+    float: none;
+    margin: 25px auto;
+  }
+}
