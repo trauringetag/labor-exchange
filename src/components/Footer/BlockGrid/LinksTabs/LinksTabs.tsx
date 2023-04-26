@@ -70,12 +70,13 @@ const LinksTabs = () => {
             <TabPanel value={value} index={1}>
                 <Link to={'/questionnaires'}>Опросники</Link>
                 <Link to={'/for-employers'}>Работодателям</Link>
-            </TabPanel>
-            <TabPanel value={value} index={2}>
+                <Link to={'/personal-data-policy'}>Политика обработки персональных данных</Link>
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
                 <Link to={'/legislation/legislative-changes'}>Изменение законодательства</Link>
                 <Link to={'/temporary-employment'}>Временное трудоустройство</Link>
-                <Link to={'/personal-data-policy'}>Политика обработки персональных данных</Link>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <Link to={'/'}>История города</Link>
             </TabPanel>
         </Box>
     );

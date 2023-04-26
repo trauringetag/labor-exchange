@@ -24,13 +24,13 @@ $shadow-color: rgba(34, 60, 80, 0.2);
 
 @mixin medium-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 @mixin small-container {
   width: 100%;
-  max-width: 750px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

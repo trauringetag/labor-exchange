@@ -1,7 +1,7 @@
 @import "src/general";
 
 .table {
-  @include medium-container;
+  @include small-container;
   @include shadow;
   border-collapse: collapse;
 
