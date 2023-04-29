@@ -2,7 +2,6 @@
   "name": "labor-exchange",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trauringetag.github.io/labor-exchange",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -10,9 +9,6 @@
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.13",
     "@reduxjs/toolkit": "^1.9.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
@@ -30,15 +26,12 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "redux": "^4.2.0",
-    "sass": "^1.56.1",
     "slick-carousel": "^1.8.1",
     "typescript": "^4.9.5",
     "use-react-router-breadcrumbs": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -63,6 +56,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "sass": "^1.62.1"
   }
 }
