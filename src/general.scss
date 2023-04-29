@@ -65,17 +65,17 @@ $shadow-color: rgba(34, 60, 80, 0.2);
   flex-direction: column;
   gap: 25px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 28px;
 
   h3 {
     color: $black-1;
     font-weight: 500;
   }
-  p, ul {
+  p, ul, ol {
     color: $black-2;
     font-weight: 300;
   }
-  ul {
+  ul, ol {
     padding-left: 50px;
     display: flex;
     flex-direction: column;

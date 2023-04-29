@@ -14,6 +14,7 @@ import { FC } from "react";
 import SingleArticle from "./pages/SingleArticle/SingleArticle";
 import PersonalDataPolicy from "./pages/PersonalDataPolicy/PersonalDataPolicy";
 import CityHistory from "./pages/CityHistory/CityHistory";
+import PublicReception from "./pages/PublicReception/PublicReception";
 
 const App: FC = (): JSX.Element => (
     <Routes>
@@ -31,6 +32,7 @@ const App: FC = (): JSX.Element => (
             <Route path={'feed/id:id'} element={<SingleArticle />} />
             <Route path={'personal-data-policy'} element={<PersonalDataPolicy />} />
             <Route path={'city-history'} element={<CityHistory />} />
+            <Route path={'public-reception'} element={<PublicReception />} />
         </Route>
     </Routes>
 );

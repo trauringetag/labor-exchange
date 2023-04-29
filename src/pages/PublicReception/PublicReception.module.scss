@@ -1,0 +1,19 @@
+@import "src/general";
+
+.wrapper {
+ @include content-block;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
