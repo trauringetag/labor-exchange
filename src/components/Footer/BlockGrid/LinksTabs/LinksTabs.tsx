@@ -66,6 +66,7 @@ const LinksTabs = () => {
                 <Link to={'/about'}>О нас</Link>
                 <Link to={'/legislation'}>Законодательство</Link>
                 <Link to={'/feed'}>Новости</Link>
+                <Link to={'/situation-labor-market'}>Рынок труда</Link>
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Link to={'/questionnaires'}>Опросники</Link>

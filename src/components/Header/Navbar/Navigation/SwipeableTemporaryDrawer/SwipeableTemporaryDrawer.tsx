@@ -20,6 +20,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import { FC } from "react";
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import HailIcon from '@mui/icons-material/Hail';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -86,6 +87,16 @@ const SwipeableTemporaryDrawer: FC = (): JSX.Element => {
                                 <NewspaperIcon className={classes.icon} />
                             </ListItemIcon>
                             <ListItemText primary={'Новости'} />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
+                <ListItem key={'Рынок труда'} disablePadding>
+                    <NavLink to={'/situation-labor-market'} className={setActive}>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <HailIcon className={classes.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={'Рынок труда'} />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
