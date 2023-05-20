@@ -3,7 +3,6 @@ import { FC } from "react";
 import { HandySvg } from 'handy-svg';
 import VKIcon from '../../../../assets/social/vk.svg';
 import TelegramIcon from '../../../../assets/social/telegram.svg';
-import WhatsAppIcon from '../../../../assets/social/whatsapp.svg';
 
 const Contacts: FC = (): JSX.Element => (
     <aside className={classes.connection}>
@@ -29,13 +28,6 @@ const Contacts: FC = (): JSX.Element => (
                rel={'noopener noreferrer'}
             >
                 <HandySvg src={TelegramIcon} className={classes.telegram} />
-            </a>
-            <a className={classes.link}
-               href={'https://wa.me/73513355780'}
-               target={'_blank'}
-               rel={'noopener noreferrer'}
-            >
-                <HandySvg src={WhatsAppIcon} className={classes.whatsapp} />
             </a>
         </div>
     </aside>

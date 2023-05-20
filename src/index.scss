@@ -13,6 +13,13 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background: #ffb7b7; /* Safari */
+}
+*::-moz-selection {
+  background: #ffb7b7; /* Firefox */
+}
+
 html {
   scroll-behavior: smooth;
 }

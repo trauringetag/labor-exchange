@@ -1,0 +1,49 @@
+@import "src/general";
+
+.labor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 50px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: $blue-1;
+  line-height: 40px;
+
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.information {
+  font-size: 18px;
+  font-weight: 300;
+  color: $black-1;
+  line-height: 28px;
+
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 512px;
+  object-fit: cover;
+}

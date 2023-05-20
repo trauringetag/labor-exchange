@@ -3,6 +3,10 @@
 .link {
   text-decoration: none;
   max-width: max-content;
+
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }
 
 .button {
