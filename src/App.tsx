@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { FC } from "react";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Official from "./pages/Official/Official";
 import About from "./pages/About/About";
@@ -10,12 +11,12 @@ import LegislativeChanges from "./pages/LegislativeChanges/LegislativeChanges";
 import TemporaryEmployment from "./pages/TemporaryEmployment/TemporaryEmployment";
 import ForEmployers from "./pages/ForEmployers/ForEmployers";
 import Feed from "./pages/Feed/Feed";
-import { FC } from "react";
 import SingleArticle from "./pages/SingleArticle/SingleArticle";
 import PersonalDataPolicy from "./pages/PersonalDataPolicy/PersonalDataPolicy";
 import CityHistory from "./pages/CityHistory/CityHistory";
 import PublicReception from "./pages/PublicReception/PublicReception";
 import SituationLaborMarket from "./pages/SituationLaborMarket/SituationLaborMarket";
+import OnlineReception from "./pages/OnlineReception/OnlineReception";
 
 const App: FC = (): JSX.Element => (
     <Routes>
@@ -35,6 +36,7 @@ const App: FC = (): JSX.Element => (
             <Route path={'city-history'} element={<CityHistory />} />
             <Route path={'public-reception'} element={<PublicReception />} />
             <Route path={'situation-labor-market'} element={<SituationLaborMarket />} />
+            <Route path={'online-reception'} element={<OnlineReception />} />
         </Route>
     </Routes>
 );

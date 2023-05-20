@@ -21,6 +21,7 @@ import { FC } from "react";
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 import HailIcon from '@mui/icons-material/Hail';
+import LanguageIcon from '@mui/icons-material/Language';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -130,6 +131,16 @@ const SwipeableTemporaryDrawer: FC = (): JSX.Element => {
                                 <ReceiptLongIcon className={classes.icon} />
                             </ListItemIcon>
                             <ListItemText primary={'Приёмная'} />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
+                <ListItem key={'Онлайн-приёмная'} disablePadding>
+                    <NavLink to={'/online-reception'} className={setActive}>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <LanguageIcon className={classes.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={'Онлайн-приёмная'} />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>

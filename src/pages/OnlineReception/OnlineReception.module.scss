@@ -1,0 +1,28 @@
+@import "src/general";
+
+.form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.button {
+  max-width: max-content;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  label {
+    line-height: 24px;
+  }
+}
+
+.link {
+  color: $blue-3 !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -71,13 +71,15 @@ const LinksTabs = () => {
             <TabPanel value={value} index={1}>
                 <Link to={'/questionnaires'}>Опросники</Link>
                 <Link to={'/for-employers'}>Работодателям</Link>
+                <Link to={'/public-reception'}>Приёмная</Link>
+                <Link to={'/online-reception'}>Онлайн-приёмная</Link>
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <Link to={'/city-history'}>История города</Link>
                 <Link to={'/personal-data-policy'}>Политика обработки персональных данных</Link>
                 <Link to={'/legislation/appeal-procedure'}>Порядок обжалования</Link>
                 <Link to={'/legislation/legislative-changes'}>Изменение законодательства</Link>
                 <Link to={'/temporary-employment'}>Временное трудоустройство</Link>
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                <Link to={'/city-history'}>История города</Link>
             </TabPanel>
         </Box>
     );

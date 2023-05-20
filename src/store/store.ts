@@ -6,6 +6,7 @@ import SearchSlice from "./slices/SearchSlice";
 import MailingSlice from "./slices/MailingSlice";
 import ModalSlice from "./slices/ModalSlice";
 import LaborMarketSlice from "./slices/LaborMarketSlice";
+import OnlineReceptionSlice from "./slices/OnlineReceptionSlice";
 
 export const store = configureStore({
     reducer: {
@@ -15,7 +16,8 @@ export const store = configureStore({
         searchField: SearchSlice,
         mailing: MailingSlice,
         modal: ModalSlice,
-        laborMarket: LaborMarketSlice
+        laborMarket: LaborMarketSlice,
+        onlineReception: OnlineReceptionSlice
     }
 });
 
