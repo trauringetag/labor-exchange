@@ -120,8 +120,8 @@ const OnlineReception: FC = (): JSX.Element => {
         dispatch(setTextAppeal(e.target.value));
     };
 
-    const submitData = () => {
-        axios.post('http://localhost:8080/api/reception', {
+    const submitData = async () => {
+        await axios.post('http://localhost:8080/api/reception', {
             full_name: fullName,
             email: email,
             address: address,
@@ -131,6 +131,13 @@ const OnlineReception: FC = (): JSX.Element => {
             text_appeal: textAppeal
         }).then(response => {
             dispatch(setStatus(response.status));
+            dispatch(setFullName(''));
+            dispatch(setEmail(''));
+            dispatch(setAddress(''));
+            dispatch(setPhone(''));
+            dispatch(setCategory('Предложение'));
+            dispatch(setSocialStatus('Не указан'));
+            dispatch(setTextAppeal(''));
             dispatch(setPositiveDescription('Ваше заявление успешно отправлено на рассмотрение сотрудникам ОКУ ЦЗН г. Карталы! В ближайшее время с вами свяжутся!'));
             dispatch(handleOpen(true));
         }).catch(error => {
