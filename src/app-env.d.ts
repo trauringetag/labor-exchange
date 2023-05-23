@@ -11,6 +11,7 @@ declare module '*.sass' {
 }
 
 declare module 'react-markup';
+declare module 'crypto-js/sha256';
 declare module 'react-slick';
 declare module '*.webp';
 declare module '*.png';

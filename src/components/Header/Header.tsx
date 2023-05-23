@@ -17,12 +17,18 @@ const Header: FC = (): JSX.Element => {
     return (
         <header className={classes.wrapper} ref={ref}>
             <Navbar />
-            <Fade triggerOnce>
-                <section className={classes.container}>
-                    <Breadcrumbs separator={'<'} />
-                    <BasicServices />
-                </section>
-            </Fade>
+            {
+                location.pathname !== '/login' &&
+                location.pathname !== '/admin' ?
+                    <Fade triggerOnce>
+                        <section className={classes.container}>
+                            <Breadcrumbs separator={'<'} />
+                            <BasicServices />
+                        </section>
+                    </Fade>
+                    :
+                    <></>
+            }
         </header>
     );
 };

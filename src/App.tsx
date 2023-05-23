@@ -17,6 +17,9 @@ import CityHistory from "./pages/CityHistory/CityHistory";
 import PublicReception from "./pages/PublicReception/PublicReception";
 import SituationLaborMarket from "./pages/SituationLaborMarket/SituationLaborMarket";
 import OnlineReception from "./pages/OnlineReception/OnlineReception";
+import Login from "./pages/Login/Login";
+import RequireAuth from './hoc/RequireAuth';
+import AdminPanel from "./pages/AdminPanel/AdminPanel";
 
 const App: FC = (): JSX.Element => (
     <Routes>
@@ -37,6 +40,12 @@ const App: FC = (): JSX.Element => (
             <Route path={'public-reception'} element={<PublicReception />} />
             <Route path={'situation-labor-market'} element={<SituationLaborMarket />} />
             <Route path={'online-reception'} element={<OnlineReception />} />
+            <Route path={'login'} element={<Login />} />
+            <Route path={'admin'} element={
+                <RequireAuth>
+                    <AdminPanel />
+                </RequireAuth>
+            } />
         </Route>
     </Routes>
 );
