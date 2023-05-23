@@ -128,7 +128,8 @@ const OnlineReception: FC = (): JSX.Element => {
 			phone: phone,
 			category: category,
 			social_status: socialStatus,
-			text_appeal: textAppeal
+			text_appeal: textAppeal,
+			processed: false
 		}).then(response => {
 			dispatch(setStatus(response.status));
 			dispatch(setFullName(''));

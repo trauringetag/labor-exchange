@@ -10,8 +10,11 @@ export const StatementListSlice = createSlice({
     reducers: {
         setStatements(state, action) {
             state.statements = action.payload;
+        },
+        deleteProcessedRequest(state: any, action) {
+            state.statements[action.payload - 1].processed = true;
         }
     }
 });
 export default StatementListSlice.reducer;
-export const { setStatements } = StatementListSlice.actions;
+export const { setStatements, deleteProcessedRequest } = StatementListSlice.actions;
