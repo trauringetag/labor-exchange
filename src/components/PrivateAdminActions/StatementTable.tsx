@@ -45,6 +45,15 @@ const StatementTable: FC = (): JSX.Element => {
             <tr>
                 <th colSpan={7}>Список обращений</th>
             </tr>
+            <tr>
+                <td>ФИО</td>
+                <td>Почта</td>
+                <td>Адрес</td>
+                <td>Телефон</td>
+                <td>Категория</td>
+                <td>Социальный статус</td>
+                <td>Текст обращения</td>
+            </tr>
             </thead>
             <tbody>
                 { displayStatements }
