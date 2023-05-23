@@ -151,7 +151,7 @@ const OnlineReception: FC = (): JSX.Element => {
 		<Wrapper title={'Онлайн-приёмная'}>
 			<Box
 				component={'form'}
-				sx={{ '& > :not(style)': { m: 1, width: '100%' } }}
+				sx={{ '& > :not(style)': { width: '100%' } }}
 				noValidate
 				autoComplete={'off'}
 				className={classes.form}

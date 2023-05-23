@@ -1,0 +1,45 @@
+@import "src/general";
+
+.table {
+  @include small-container;
+  max-width: 100%;
+  @include shadow;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+
+  th {
+    background-color: $blue-3;
+    color: $white-1;
+    font-size: 20px;
+  }
+  td {
+    width: max-content;
+    font-size: 16px;
+  }
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  tr {
+    &:hover {
+      background-color: $white-3;
+    }
+    &:nth-child(even) {
+      background-color: $white-5;
+
+      &:hover {
+        background-color: $white-4;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  tr {
+    background-color: $white-3 !important;
+
+    &:nth-child(even) {
+      background-color: $white-4 !important;
+    }
+  }
+}

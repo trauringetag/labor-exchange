@@ -8,6 +8,9 @@ import ModalSlice from "./slices/ModalSlice";
 import LaborMarketSlice from "./slices/LaborMarketSlice";
 import OnlineReceptionSlice from "./slices/OnlineReceptionSlice";
 import CheckPasswordSlice from "./slices/CheckPasswordSlice";
+import AddSituationSlice from "./slices/AddSituationSlice";
+import AddArticleSlice from "./slices/AddArticleSlice";
+import StatementListSlice from "./slices/StatementListSlice";
 
 export const store = configureStore({
     reducer: {
@@ -19,7 +22,10 @@ export const store = configureStore({
         modal: ModalSlice,
         laborMarket: LaborMarketSlice,
         onlineReception: OnlineReceptionSlice,
-        checkPassword: CheckPasswordSlice
+        checkPassword: CheckPasswordSlice,
+        addSituation: AddSituationSlice,
+        addArticle: AddArticleSlice,
+        statementList: StatementListSlice
     }
 });
 

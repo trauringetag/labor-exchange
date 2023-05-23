@@ -52,7 +52,7 @@ const Login: FC = (): JSX.Element => {
             <p className={classes.description}>Пожалуйста, введите пароль администратора для перехода в панель управления.</p>
             <Box
                 component={'form'}
-                sx={{ '& > :not(style)': { m: 1, width: '100%' } }}
+                sx={{ '& > :not(style)': { width: '100%' } }}
                 noValidate
                 autoComplete={'off'}
                 className={classes.form}
