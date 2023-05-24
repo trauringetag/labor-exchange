@@ -36,7 +36,7 @@ const Feed: FC = (): JSX.Element => {
 
     const displayArticles = articles.map((item: IArticles) =>
         <PreviewArticle key={item.id} { ...item } />
-    );
+    ).reverse();
 
     return (
         <Wrapper title={'Лента новостей'}>
