@@ -27,6 +27,10 @@ const Appeal: FC<IAppeal> = (props): JSX.Element => {
         dispatch(deleteProcessedRequest(props.id));
     };
 
+    const parseDate = props.createdAt
+        .replace('T', ' ')
+        .replace('.000Z', '');
+
     return (
         <article className={classes.appeal}>
             <div>
@@ -47,7 +51,7 @@ const Appeal: FC<IAppeal> = (props): JSX.Element => {
             </div>
             <div className={classes.control}>
                 <Button className={classes.button} variant={'contained'} onClick={ processApplication }>Обработано</Button>
-                <time className={classes.time} dateTime={ props.createdAt }>{ props.createdAt }</time>
+                <time className={classes.time} dateTime={ props.createdAt }>{ parseDate }</time>
             </div>
         </article>
     );

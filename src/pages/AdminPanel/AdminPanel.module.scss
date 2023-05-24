@@ -26,3 +26,11 @@
 .underlining {
   @include underlining;
 }
+
+.empty {
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+  color: $black-2;
+  font-size: 20px;
+}

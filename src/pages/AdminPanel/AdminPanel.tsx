@@ -32,16 +32,7 @@ const AdminPanel: FC = (): JSX.Element => {
     const statements = useAppSelector((state: RootState) => state.statementList.statements);
 
     const displayStatements = statements.filter((item: any) => !item.processed).map((item: IAdminPanel) =>
-        <Appeal id={item.id}
-                full_name={item.full_name}
-                email={item.email}
-                address={item.address}
-                phone={item.phone}
-                category={item.category}
-                social_status={item.social_status}
-                text_appeal={item.text_appeal}
-                createdAt={item.createdAt}
-        />
+        <Appeal key={item.id} { ...item }/>
     );
 
     return (
@@ -54,7 +45,11 @@ const AdminPanel: FC = (): JSX.Element => {
             <hr className={classes.underlining} />
             <section className={classes.wrapper}>
                 <h2 className={`${classes.title} ${classes.subtitle}`}>Список обращений</h2>
-                { displayStatements }
+                {
+                    displayStatements.length === 0 ?
+                        <p className={classes.empty}>На данный момент обращения отсутствуют.</p> :
+                        displayStatements
+                }
             </section>
         </>
     );
