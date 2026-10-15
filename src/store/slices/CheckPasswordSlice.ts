@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const user = localStorage.getItem('user');
+
 const initialState = {
     currentPassword: '',
     requiredPassword: '',
-    available: false
+    available: user ? true : false
 };
 
 export const CheckPasswordSlice = createSlice({
@@ -18,8 +20,12 @@ export const CheckPasswordSlice = createSlice({
         },
         setAvailable(state, action) {
             state.available = action.payload;
+            if (action.payload === false) {
+                localStorage.removeItem('user');
+            }
         }
     }
 });
+
 export default CheckPasswordSlice.reducer;
 export const { setCurrentPassword, setRequiredPassword, setAvailable } = CheckPasswordSlice.actions;

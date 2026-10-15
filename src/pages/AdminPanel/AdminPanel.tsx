@@ -1,12 +1,15 @@
 import classes from './AdminPanel.module.scss';
 import { FC, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AddSituation from "../../components/PrivateAdminActions/AddSituation";
 import AddArticle from "../../components/PrivateAdminActions/AddArticle";
 import Appeal from "../../components/PrivateAdminActions/Appeal/Appeal";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import axios from "axios";
 import { setStatements } from "../../store/slices/StatementListSlice";
+import { setAvailable } from "../../store/slices/CheckPasswordSlice";
 import { RootState } from "../../store/store";
+import Button from "@mui/material/Button";
 
 interface IAdminPanel {
     id: number,
@@ -14,14 +17,15 @@ interface IAdminPanel {
     email: string,
     address: string,
     phone: string,
-    category: string,
-    social_status: string,
+    category?: { name: string },
+    socialStatus?: { name: string },
     text_appeal: string,
     createdAt: string
 }
 
 const AdminPanel: FC = (): JSX.Element => {
     const dispatch = useAppDispatch();
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('http://localhost:8080/api/reception').then(response => {
@@ -35,10 +39,23 @@ const AdminPanel: FC = (): JSX.Element => {
         <Appeal key={item.id} { ...item }/>
     );
 
+    const handleLogout = () => {
+        dispatch(setAvailable(false));
+        navigate('/login');
+    };
+
     return (
         <>
             <section className={`${classes.wrapper} ${classes.addendum}`}>
                 <h1 className={classes.title}>Панель администратора</h1>
+                <Button
+                    variant={'outlined'}
+                    color={'error'}
+                    onClick={handleLogout}
+                    sx={{ mb: 2 }}
+                >
+                    Выйти из системы
+                </Button>
                 <AddSituation />
                 <AddArticle />
             </section>

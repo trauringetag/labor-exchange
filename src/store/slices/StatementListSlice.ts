@@ -12,9 +12,13 @@ export const StatementListSlice = createSlice({
             state.statements = action.payload;
         },
         deleteProcessedRequest(state: any, action) {
-            state.statements[action.payload - 1].processed = true;
+            const statement = state.statements.find((s: any) => s.id === action.payload);
+            if (statement) {
+                statement.processed = true;
+            }
         }
     }
 });
+
 export default StatementListSlice.reducer;
 export const { setStatements, deleteProcessedRequest } = StatementListSlice.actions;

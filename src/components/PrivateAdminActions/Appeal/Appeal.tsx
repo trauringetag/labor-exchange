@@ -11,8 +11,8 @@ interface IAppeal {
     email: string,
     address: string,
     phone: string,
-    category: string,
-    social_status: string,
+    category?: { name: string },
+    socialStatus?: { name: string },
     text_appeal: string,
     createdAt: string
 }
@@ -36,7 +36,7 @@ const Appeal: FC<IAppeal> = (props): JSX.Element => {
             <div>
                 <h3 className={classes.group}>
                     <span className={classes.name}>{ props.full_name }</span>
-                    <span className={classes.social__status}>{ props.social_status}</span>
+                    <span className={classes.social__status}>{ props.socialStatus?.name || 'Не указан' }</span>
                 </h3>
                 <p className={classes.address}>{ props.address }</p>
                 <p className={classes.group}>
@@ -46,7 +46,7 @@ const Appeal: FC<IAppeal> = (props): JSX.Element => {
                 </p>
             </div>
             <div>
-                <p className={classes.category}>Категория: <span>{ props.category }</span></p>
+                <p className={classes.category}>Категория: <span>{ props.category?.name || 'Не указана' }</span></p>
                 <p className={classes.text}>{ props.text_appeal}</p>
             </div>
             <div className={classes.control}>

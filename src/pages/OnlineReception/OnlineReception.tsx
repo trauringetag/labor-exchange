@@ -1,5 +1,5 @@
 import classes from './OnlineReception.module.scss';
-import { FC, forwardRef, ChangeEvent } from "react";
+import { FC, forwardRef, ChangeEvent, useState, useEffect } from "react";
 import Wrapper from "../../components/CommonComponents/Wrapper/Wrapper";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -12,8 +12,8 @@ import {
 	setPhone,
 	setTextAppeal,
 	setIsAgree,
-	setCategory,
-	setSocialStatus
+	setCategoryId,
+	setSocialStatusId
 } from "../../store/slices/OnlineReceptionSlice";
 import { RootState } from "../../store/store";
 import Button from "@mui/material/Button";
@@ -27,47 +27,10 @@ interface CustomProps {
 	name: string;
 }
 
-const categoryList = [
-	{ value: 'Предложение', label: 'Предложение' },
-	{ value: 'Заявление', label: 'Заявление' },
-	{ value: 'Жалоба', label: 'Жалоба' }
-];
-
-const socialStatusList = [
-	{ value: 'Не указан', label: 'Не указан' },
-	{ value: 'Беженец', label: 'Беженец' },
-	{ value: 'Безработный', label: 'Безработный' },
-	{ value: 'БОМЖ', label: 'БОМЖ' },
-	{ value: 'Ветеран боевых действий', label: 'Ветеран боевых действий' },
-	{ value: 'Ветеран труда', label: 'Ветеран труда' },
-	{ value: 'Военнослужащий', label: 'Военнослужащий' },
-	{ value: 'Госслужащий', label: 'Госслужащий' },
-	{ value: 'Дети-сироты', label: 'Дети-сироты' },
-	{ value: 'Домохозяйка', label: 'Домохозяйка' },
-	{ value: 'Инвалид ВОВ', label: 'Инвалид ВОВ' },
-	{ value: 'Инвалид ВС', label: 'Инвалид ВС' },
-	{ value: 'Инвалид по общему заболеванию', label: 'Инвалид по общему заболеванию' },
-	{ value: 'Инвалид с детства', label: 'Инвалид с детства' },
-	{ value: 'Инвалид труда', label: 'Инвалид труда' },
-	{ value: 'Коллектив', label: 'Коллектив' },
-	{ value: 'Мать-одиночка', label: 'Мать-одиночка' },
-	{ value: 'Многодетная семья', label: 'Многодетная семья' },
-	{ value: 'Организация', label: 'Организация' },
-	{ value: 'Осуждённый', label: 'Осуждённый' },
-	{ value: 'Пенсионер', label: 'Пенсионер' },
-	{ value: 'Пострадавший от радиации', label: 'Пострадавший от радиации' },
-	{ value: 'Пострадавший от репрессий', label: 'Пострадавший от репрессий' },
-	{ value: 'Предприниматель', label: 'Предприниматель' },
-	{ value: 'Работник здравоохранения', label: 'Работник здравоохранения' },
-	{ value: 'Работник культуры, спорта', label: 'Работник культуры, спорта' },
-	{ value: 'Работник образования', label: 'Работник образования' },
-	{ value: 'Рабочий', label: 'Рабочий' },
-	{ value: 'Руководитель', label: 'Руководитель' },
-	{ value: 'Семьи погибших', label: 'Семьи погибших' },
-	{ value: 'Труженик тыла', label: 'Труженик тыла' },
-	{ value: 'Участник ВОВ', label: 'Участник ВОВ' },
-	{ value: 'Учащийся, студент', label: 'Учащийся, студент' }
-];
+interface DictionaryItem {
+    id: number;
+    name: string;
+}
 
 const TextMaskCustom = forwardRef<HTMLElement, CustomProps>(
 	function TextMaskCustom(props, ref) {
@@ -93,10 +56,18 @@ const OnlineReception: FC = (): JSX.Element => {
 	const email = useAppSelector((state: RootState) => state.onlineReception.email);
 	const address = useAppSelector((state: RootState) => state.onlineReception.address);
 	const phone = useAppSelector((state: RootState) => state.onlineReception.phone);
-	const category = useAppSelector((state: RootState) => state.onlineReception.category);
-	const socialStatus = useAppSelector((state: RootState) => state.onlineReception.socialStatus);
+	const categoryId = useAppSelector((state: RootState) => state.onlineReception.categoryId);
+	const socialStatusId = useAppSelector((state: RootState) => state.onlineReception.socialStatusId);
 	const textAppeal = useAppSelector((state: RootState) => state.onlineReception.textAppeal);
 	const isAgree = useAppSelector((state: RootState) => state.onlineReception.isAgree);
+
+    const [categories, setCategories] = useState<DictionaryItem[]>([]);
+    const [socialStatuses, setSocialStatuses] = useState<DictionaryItem[]>([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:8080/api/categories').then(res => setCategories(res.data));
+        axios.get('http://localhost:8080/api/social_statuses').then(res => setSocialStatuses(res.data));
+    }, []);
 
 	const handleChangeFullName = (e: ChangeEvent<HTMLInputElement>) => {
 		dispatch(setFullName(e.target.value));
@@ -111,10 +82,10 @@ const OnlineReception: FC = (): JSX.Element => {
 		dispatch(setPhone(e.target.value));
 	};
 	const handleChangeCategory = (e: ChangeEvent<HTMLInputElement>) => {
-		dispatch(setCategory(e.target.value));
+		dispatch(setCategoryId(Number(e.target.value)));
 	};
 	const handleChangeSocialStatus = (e: ChangeEvent<HTMLInputElement>) => {
-		dispatch(setSocialStatus(e.target.value));
+		dispatch(setSocialStatusId(Number(e.target.value)));
 	};
 	const handleChangeTextAppeal = (e: ChangeEvent<HTMLInputElement>) => {
 		dispatch(setTextAppeal(e.target.value));
@@ -126,8 +97,8 @@ const OnlineReception: FC = (): JSX.Element => {
 			email: email,
 			address: address,
 			phone: phone,
-			category: category,
-			social_status: socialStatus,
+			category_id: categoryId,
+			social_status_id: socialStatusId,
 			text_appeal: textAppeal,
 			processed: false
 		}).then(response => {
@@ -136,13 +107,13 @@ const OnlineReception: FC = (): JSX.Element => {
 			dispatch(setEmail(''));
 			dispatch(setAddress(''));
 			dispatch(setPhone(''));
-			dispatch(setCategory('Предложение'));
-			dispatch(setSocialStatus('Не указан'));
+			dispatch(setCategoryId(null));
+			dispatch(setSocialStatusId(null));
 			dispatch(setTextAppeal(''));
 			dispatch(setPositiveDescription('Ваше заявление успешно отправлено на рассмотрение сотрудникам ОКУ ЦЗН г. Карталы! В ближайшее время с вами свяжутся!'));
 			dispatch(handleOpen(true));
 		}).catch(error => {
-			dispatch(setStatus(error.response.status));
+			dispatch(setStatus(error.response?.status || 500));
 			dispatch(setNegativeDescription('Произошла ошибка при отправке заявления! Пожалуйста, проверьте корректность составления, и повторите попытку!'));
 			dispatch(handleOpen(true));
 		});
@@ -191,12 +162,13 @@ const OnlineReception: FC = (): JSX.Element => {
 					id={'category'}
 					select
 					label={'Категория'}
-					value={category}
+					value={categoryId ?? ''}
 					onChange={handleChangeCategory}
 				>
-					{categoryList.map((option) => (
-						<MenuItem key={option.value} value={option.value}>
-							{option.label}
+                    <MenuItem value=""><em>Выберите категорию</em></MenuItem>
+					{categories.map((option) => (
+						<MenuItem key={option.id} value={option.id}>
+							{option.name}
 						</MenuItem>
 					))}
 				</TextField>
@@ -204,12 +176,13 @@ const OnlineReception: FC = (): JSX.Element => {
 					id={'social-status'}
 					select
 					label={'Социальный статус'}
-					value={socialStatus}
+					value={socialStatusId ?? ''}
 					onChange={handleChangeSocialStatus}
 				>
-					{socialStatusList.map((option) => (
-						<MenuItem key={option.value} value={option.value}>
-							{option.label}
+                    <MenuItem value=""><em>Выберите социальный статус</em></MenuItem>
+					{socialStatuses.map((option) => (
+						<MenuItem key={option.id} value={option.id}>
+							{option.name}
 						</MenuItem>
 					))}
 				</TextField>
